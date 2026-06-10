@@ -1,0 +1,54 @@
+---
+title: "AI & Data-Center Energy Demand"
+description: "Co-author of EPRI's widely-referenced analysis projecting U.S. data-center electricity demand through 2030 — quantifying how AI could push data centers from ~4% toward 9% of national electricity, and what utilities can do to absorb the growth."
+date: 2024-05-01
+categories: [Energy Analytics, AI, Publication, EPRI]
+---
+
+## The question
+
+As AI workloads exploded, utilities and policymakers faced an urgent,
+poorly-quantified question: *how much electricity will AI and data centers
+actually demand, and what does that mean for a grid that plans in decades?*
+Speculation was plentiful. Defensible numbers were scarce.
+
+## Powering Intelligence
+
+I co-authored *Powering Intelligence: Analyzing Artificial Intelligence and
+Data Center Energy Consumption* (EPRI, 2024), which became one of the most
+widely-referenced analyses on the subject. It projected U.S. data-center load
+growth from a 2023 baseline of roughly 152 TWh/year — about 4% of national
+electricity — across four scenarios through 2030:
+
+- A low-growth path reaching about 4.6% of U.S. electricity
+- A moderate path near 5.0%
+- A high-growth path around 6.8%
+- An aggressive path as high as 9.1%
+
+The analysis put concrete bounds on AI's energy intensity — a single ChatGPT
+request consumes roughly ten times the electricity of a Google search (about
+2.9 Wh versus 0.3 Wh) — and mapped its striking geographic concentration, with
+15 states accounting for roughly 80% of U.S. data-center load and Virginia
+alone drawing about a quarter of its state electricity. It also flagged the end
+of an era: average data-center efficiency (PUE) had improved steadily for over a
+decade but is now plateauing just as AI load accelerates.
+
+Crucially, the report didn't just sound an alarm. It laid out strategies for
+utilities to absorb the growth: efficiency and load flexibility, tighter
+developer–utility coordination, and better five-to-ten-year grid-planning tools.
+
+## Data Center Heat Reuse
+
+I also contributed to a companion Quick Insight on data-center heat reuse, which
+examined cooling — 30–40% of a data center's energy use — as a recovery
+opportunity rather than pure waste. It highlighted real deployments, including a
+project in Helsinki that channels data-center waste heat to warm hundreds of
+thousands of residents while avoiding substantial annual CO₂ emissions, and
+tracked emerging regulation mandating heat reuse.
+
+## Why it matters
+
+Grid planning runs on years-long lead times, so the cost of guessing wrong about
+AI's demand is measured in blackouts or stranded investment. Giving planners
+credible, bounded projections — rather than hype — directly shapes whether the
+grid can absorb AI's growth without compromising reliability or climate goals.

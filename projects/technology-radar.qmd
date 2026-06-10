@@ -1,0 +1,61 @@
+---
+title: "EPRI Technology Radar: Methodology & Platform"
+description: "I designed and architected the statistical methodology and software backbone behind EPRI's flagship technology-foresight platform — a confidence-weighted system that turns expert input from ~80 contributors into defensible, comparable scores across ~69 energy technologies."
+date: 2024-10-01
+categories: [Technology Foresight, Statistics, Python, EPRI]
+---
+
+## My role
+
+I functioned as the data architect for EPRI's
+[Technology Radar](https://epritechradar.epri.com/?pg=home), designing the
+statistical methodology, building the Python aggregation tooling, and authoring
+the backend, front-end, and methods documentation behind the institute's
+flagship technology-foresight product. It's the work I'm proudest of from my
+time at EPRI: a system that had to be both statistically rigorous and trusted
+by the experts whose judgment it encoded.
+
+## The hard problem
+
+Technology foresight runs on expert opinion, and expert opinion is uneven. Some
+assessments come from deep specialists with high confidence; others are
+educated guesses. Treat them all equally and your scores are noise dressed up as
+signal. The central challenge was turning subjective, variably-confident input
+from roughly 80 subject-matter experts into scores that decision-makers could
+defend when allocating R&D budgets.
+
+## What I built
+
+**Confidence-weighted methodology.** I evaluated competing weighting schemes —
+linear, exponential, Bayesian model averaging, and a Delphi variant — and
+selected a confidence-based inverse-weighting approach, so that
+higher-confidence expert input drives the aggregate score and low-confidence
+input is damped rather than discarded. The result lets genuine expertise carry
+more signal without silencing anyone.
+
+**Uncertainty quantification.** Every technology is scored across 7 assessment
+parameters — Technology Readiness Level, Market Disruption Potential, Economic
+Impact, Sociopolitical Obstacles, Time to Commercialization, Environmental
+Impact, and Ease of Implementation — with variance, standard error, and
+confidence intervals computed per technology per parameter, then normalized to a
+0–1 scale for cross-parameter comparison.
+
+**The Python tooling.** I wrote the aggregation and analysis compendium: a
+converter that parses the proprietary expert-scorecard export and computes
+per-technology statistics, and a confidence-weighted sensitivity tool that
+compares weighting schemes across all parameters.
+
+**Driving the methodological upgrade.** The Q4 2024 Pulse Report scored 48
+technologies using simple crowd-sourced averaging. For the Q1 2025 report, I
+introduced the confidence-weighting methodology and helped expand coverage to 69
+technologies — the upgrade that took the Radar from a poll to a defensible
+analytical instrument. I co-authored the resulting Pulse Reports, leading the
+statistics, methodology, and figures.
+
+## Why it matters
+
+Energy R&D portfolios involve enormous bets under deep uncertainty, and the cost
+of chasing hype instead of substance is measured in years and millions. A
+rigorous, confidence-aware foresight system helps decision-makers separate
+genuine signal from enthusiasm — and put resources where they'll actually move
+the energy transition forward.

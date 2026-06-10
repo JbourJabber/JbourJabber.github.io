@@ -1,7 +1,72 @@
 ---
-title: "J.Y. Al-Jbour"
+title: ""
+pagetitle: "Jordan Y. Aljbour"
+page-layout: full
+toc: false
 ---
 
-This is a Quarto website.
+::: {.hero-banner}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+# Jordan Y. Aljbour {.hero-title}
+
+### Climate & Energy Researcher · Computational Scientist · Python Developer {.hero-subtitle}
+
+A computational and data scientist working at the intersection of climate
+science, energy systems, and high-performance computing — turning complex
+physical datasets into reproducible, decision-grade tools.
+
+[View Research](research.qmd){.btn .btn-accent role="button"}
+[See Projects](projects.qmd){.btn .btn-accent-outline role="button"}
+[GitHub](https://github.com/JbourJabber){.btn .btn-accent-outline role="button"}
+
+:::
+
+## At a glance
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-3 .stat-card}
+### 40%+
+Runtime & memory cut on distributed HPC pipelines running 10k+ Monte Carlo samples per scenario
+:::
+
+::: {.g-col-12 .g-col-md-3 .stat-card}
+### 69
+Energy technologies scored in [EPRI's Technology Radar](https://epritechradar.epri.com/?pg=home) methodology
+:::
+
+::: {.g-col-12 .g-col-md-3 .stat-card}
+### 10+
+Peer & industry publications across energy and climate science
+:::
+
+::: {.g-col-12 .g-col-md-3 .stat-card}
+### 6
+Professional certifications earned or in progress (AEE, IBM, Google, WRI)
+:::
+
+:::
+
+## What I do
+
+I build the computational machinery behind environmental and energy
+decisions, because I believe the people making those decisions deserve the
+clearest possible picture of what's at stake. That conviction shapes how I
+work. I write end-to-end, reproducible scientific software: distributed
+data pipelines, statistical and risk models, and analysis-ready geospatial
+tooling, engineered to scale from a laptop to HPC and cloud clusters without
+ever cutting corners on rigor or reproducibility.
+
+The questions I take on are the ones where the science has real consequences
+for the planet. *How much will a warming climate cost our aging energy
+infrastructure? What will AI and data centers truly demand from the grid?
+How are global methane and ethane emissions actually trending, and where can
+we intervene?* I turn messy physical data into honest tools that answer those
+questions with quantified uncertainty, because good stewardship starts with
+telling the truth about the numbers.
+
+Most recently, as a Senior Python Developer in parallel computing at ICF, I
+converted experimental climate workflows into modular, tested, containerized
+Python packages. I engineered Dask pipelines for out-of-core processing and
+standardized ARCO-compliant geospatial formats (Zarr, NetCDF) on AWS S3,
+cutting runtime and memory by 40%+ in the process.

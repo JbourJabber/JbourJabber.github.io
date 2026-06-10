@@ -1,0 +1,18 @@
+---
+title: "Projects"
+listing:
+  contents: projects
+  type: grid
+  grid-columns: 3
+  sort: false
+  categories: true
+  filter-ui: true
+  sort-ui: [title, date]
+  fields: [title, description, categories]
+  image-placeholder: contour-placeholder.png
+page-layout: full
+---
+
+A selection of work spanning climate-risk engineering, energy-technology
+foresight, atmospheric modeling, and geospatial analysis. Each project pairs
+rigorous computation with a real decision it was built to inform.

@@ -1,0 +1,223 @@
+/*-- scss:defaults --*/
+
+// ---- Fonts ----
+$font-family-sans-serif: "Inter", -apple-system, "Segoe UI", Roboto, sans-serif !default;
+$headings-font-family: "Fraunces", Georgia, serif !default;
+$font-family-monospace: "IBM Plex Mono", monospace !default;
+$headings-font-weight: 600 !default;
+
+// ---- Palette ----
+$body-bg:        #0e1113;   // deep near-black
+$body-color:     #cdd3d6;   // soft paper-white
+$green:          #4caf72;
+$green-bright:   #74d99a;
+$sage:           #8fa896;   // muted secondary text
+$surface:        #161a1d;
+
+$primary:        $green;
+$link-color:     $green-bright;
+$link-hover-color: lighten($green-bright, 8%);
+
+$navbar-bg:      rgba(14, 17, 19, 0.7);
+$navbar-fg:      $body-color;
+
+$code-color:     $green-bright;
+$code-bg:        $surface;
+
+/*-- scss:rules --*/
+
+body {
+  line-height: 1.75;
+  letter-spacing: 0.1px;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Fraunces", Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+// Editorial hairline under section headings
+h2 {
+  border-bottom: 1px solid rgba(143, 168, 150, 0.2);
+  padding-bottom: 0.4rem;
+  margin-top: 2.5rem;
+}
+
+// Translucent blurred navbar (sticky, contemporary)
+.navbar {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(143, 168, 150, 0.12);
+}
+.navbar .nav-link {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: $green-bright !important;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+// ---- Hero with topographic contour motif ----
+.hero-banner {
+  position: relative;
+  padding: 5rem 1rem 3.5rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #11161a;
+  background-image:
+    radial-gradient(ellipse at top, rgba(76,175,114,0.10), transparent 65%),
+    url("data:image/svg+xml,%3Csvg width='800' height='600' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%234caf72' stroke-opacity='0.07' stroke-width='1.2'%3E%3Cpath d='M0 120 Q200 60 400 120 T800 120'/%3E%3Cpath d='M0 180 Q200 120 400 180 T800 180'/%3E%3Cpath d='M0 240 Q200 180 400 240 T800 240'/%3E%3Cpath d='M0 300 Q200 240 400 300 T800 300'/%3E%3Cpath d='M0 360 Q200 300 400 360 T800 360'/%3E%3Cpath d='M0 420 Q200 360 400 420 T800 420'/%3E%3Cpath d='M0 480 Q200 420 400 480 T800 480'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover;
+}
+.hero-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 3.4rem;
+  font-weight: 700;
+  border-bottom: none !important;
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.02em;
+}
+.hero-subtitle {
+  font-family: "IBM Plex Mono", monospace;
+  color: $sage;
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.75rem;
+  border-bottom: none !important;
+}
+
+// ---- Buttons ----
+.btn-accent {
+  background-color: $green;
+  color: #0e1113 !important;
+  border: none;
+  margin: 0.3rem;
+  font-weight: 600;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.85rem;
+  padding: 0.5rem 1.1rem;
+  transition: all 0.2s ease;
+}
+.btn-accent:hover { background-color: $green-bright; transform: translateY(-2px); }
+.btn-accent-outline {
+  border: 1px solid rgba(76,175,114,0.6);
+  color: $green-bright !important;
+  margin: 0.3rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.85rem;
+  padding: 0.5rem 1.1rem;
+  transition: all 0.2s ease;
+}
+.btn-accent-outline:hover {
+  background-color: rgba(76,175,114,0.12);
+  transform: translateY(-2px);
+}
+
+// ---- Stat cards (glassy, editorial) ----
+.stat-card {
+  background: rgba(22, 26, 29, 0.6);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(143, 168, 150, 0.15);
+  border-radius: 10px;
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.stat-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(76,175,114,0.5);
+}
+.stat-card h3 {
+  font-family: "IBM Plex Mono", monospace;
+  color: $green-bright;
+  border-bottom: none !important;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+.stat-card h3 .anchorjs-link {
+  display: none;
+}
+
+// ---- Calm scroll-reveal motion ----
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll { opacity: 1; transform: none; transition: none; }
+}
+
+// ---- Project listing cards ----
+.quarto-grid-item.card {
+  background: rgba(22, 26, 29, 0.6);
+  border: 1px solid rgba(143, 168, 150, 0.15);
+  border-radius: 10px;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.quarto-grid-item.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(76, 175, 114, 0.5);
+}
+.quarto-grid-item .card-title {
+  font-family: "Fraunces", Georgia, serif;
+  color: #e8edef;
+}
+.quarto-grid-item .listing-category {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.7rem;
+  color: #74d99a;
+  border-color: rgba(76, 175, 114, 0.4) !important;
+}
+
+// ---- Skill pills ----
+.skills-section {
+  margin-top: 1rem;
+}
+.skills-section strong {
+  display: block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #8fa896;
+  margin: 1.5rem 0 0.6rem;
+}
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.5rem;
+}
+.pill {
+  display: inline-block;
+  background: rgba(76, 175, 114, 0.10);
+  border: 1px solid rgba(76, 175, 114, 0.30);
+  color: #cdd3d6;
+  font-size: 0.82rem;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  line-height: 1.3;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.pill:hover {
+  background: rgba(76, 175, 114, 0.20);
+  border-color: rgba(76, 175, 114, 0.55);
+  transform: translateY(-1px);
+}

@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2024-10-01">
+<meta name="description" content="I designed and architected the statistical methodology and software backbone behind EPRI’s flagship technology-foresight platform — a confidence-weighted system that turns expert input from ~80 contributors into defensible, comparable scores across ~69 energy technologies.">
 
-<title>Jordan Y. Aljbour</title>
+<title>EPRI Technology Radar: Methodology &amp; Platform – Jordan Y. Aljbour</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,22 +28,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-917e33fef9f22345ae8a730791d0194a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6c609c7b5fd12dc00130499bf3044bd0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-917e33fef9f22345ae8a730791d0194a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6c609c7b5fd12dc00130499bf3044bd0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -84,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Jordan Y. Aljbour</span>
     </a>
   </div>
@@ -95,19 +98,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../research.html"> 
 <span class="menu-text">Research &amp; Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -124,109 +127,86 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
+   
   <ul>
-  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education">Education</a></li>
-  <li><a href="#certifications" id="toc-certifications" class="nav-link" data-scroll-target="#certifications">Certifications</a></li>
-  <li><a href="#technical-skills" id="toc-technical-skills" class="nav-link" data-scroll-target="#technical-skills">Technical Skills</a></li>
-  <li><a href="#selected-recognition" id="toc-selected-recognition" class="nav-link" data-scroll-target="#selected-recognition">Selected Recognition</a></li>
+  <li><a href="#my-role" id="toc-my-role" class="nav-link active" data-scroll-target="#my-role">My role</a></li>
+  <li><a href="#the-hard-problem" id="toc-the-hard-problem" class="nav-link" data-scroll-target="#the-hard-problem">The hard problem</a></li>
+  <li><a href="#what-i-built" id="toc-what-i-built" class="nav-link" data-scroll-target="#what-i-built">What I built</a></li>
+  <li><a href="#why-it-matters" id="toc-why-it-matters" class="nav-link" data-scroll-target="#why-it-matters">Why it matters</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
+<main class="content" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Jordan Y. Aljbour</h1>
+<h1 class="title">EPRI Technology Radar: Methodology &amp; Platform</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Technology Foresight</div>
+    <div class="quarto-category">Statistics</div>
+    <div class="quarto-category">Python</div>
+    <div class="quarto-category">EPRI</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    I designed and architected the statistical methodology and software backbone behind EPRI’s flagship technology-foresight platform — a confidence-weighted system that turns expert input from ~80 contributors into defensible, comparable scores across ~69 energy technologies.
+  </div>
 </div>
+
+
 <div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 1, 2024</p>
+    </div>
   </div>
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://github.com/JbourJabber" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="https://www.linkedin.com/in/jordan-aljbour-57a964226/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="mailto:Jordanaljbour@gmail.com" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
 
-<p>I’m a multidisciplinary computational scientist based in Portland, Oregon, working where climate physics, energy systems, and software engineering meet. I came to this work as an environmentalist first, convinced that we have a real responsibility to be the best stewards of this planet we can be, and I’ve spent my career making sure that conviction is backed by rigorous data rather than good intentions alone. I specialize in large-scale environmental and energy data: the kind that’s too big for memory, too messy for spreadsheets, and far too consequential to get wrong.</p>
-<p>Most recently, as a Senior Python Developer in parallel computing at ICF, I refactored experimental climate workflows into production-grade, Dask-optimized packages running across HPC and cloud clusters, and standardized analysis-ready geospatial data (Zarr/NetCDF on AWS S3). That work underpinned climate-risk tooling for the physical energy infrastructure our communities depend on, from transformers to coastal substations.</p>
-<p>Earlier, at the Electric Power Research Institute, I designed the statistical methodology and backend behind EPRI’s Technology Radar, a confidence-weighted foresight platform spanning roughly 69 energy technologies, and authored widely-referenced analyses of AI and data-center energy demand. My scientific foundation comes from Portland State’s Center for Climate and Aerosol Research, where I ran global atmospheric-chemistry simulations (GEOS-Chem) and analytical Bayesian emission inversions to investigate the methane and ethane trends driving a changing atmosphere.</p>
-<p>My approach blends technical rigor with clear communication, and it’s rooted in a simple belief: the better we understand our impact on the planet, the better we can choose to protect it. I care as much about reproducibility, documentation, and helping teams move together as I do about the models themselves, because work this important shouldn’t live or die with one person.</p>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<p><strong>B.S., Applied Environmental Physics</strong> (Honors) — Portland State University Dual minors in Geographic Information Systems &amp; Mathematics</p>
+
+<section id="my-role" class="level2">
+<h2 class="anchored" data-anchor-id="my-role">My role</h2>
+<p>I functioned as the data architect for EPRI’s <a href="https://epritechradar.epri.com/?pg=home">Technology Radar</a>, designing the statistical methodology, building the Python aggregation tooling, and authoring the backend, front-end, and methods documentation behind the institute’s flagship technology-foresight product. It’s the work I’m proudest of from my time at EPRI: a system that had to be both statistically rigorous and trusted by the experts whose judgment it encoded.</p>
 </section>
-<section id="certifications" class="level2">
-<h2 data-anchor-id="certifications">Certifications</h2>
-<ul>
-<li><strong>Certified Energy Manager (CEM)</strong> — Association of Energy Engineers <em>(in progress, 2026)</em></li>
-<li><strong>Certified Sustainable Development Professional (CSDP)</strong> — Association of Energy Engineers <em>(in progress, 2026)</em></li>
-<li><strong>IBM Data Science Professional Certificate</strong> — IBM (2025)</li>
-<li><strong>Google Advanced Data Analytics Professional Certificate</strong> — Google (2024)</li>
-<li><strong>GHG Protocol Scope 2 &amp; 3 Certificates</strong> — World Resources Institute (2023)</li>
-<li><strong>GHG Accounting Certificate</strong> — Corporate Finance Institute (2023)</li>
-</ul>
+<section id="the-hard-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-hard-problem">The hard problem</h2>
+<p>Technology foresight runs on expert opinion, and expert opinion is uneven. Some assessments come from deep specialists with high confidence; others are educated guesses. Treat them all equally and your scores are noise dressed up as signal. The central challenge was turning subjective, variably-confident input from roughly 80 subject-matter experts into scores that decision-makers could defend when allocating R&amp;D budgets.</p>
 </section>
-<section id="technical-skills" class="level2">
-<h2 data-anchor-id="technical-skills">Technical Skills</h2>
-<div class="skills-section">
-<p><strong>Languages &amp; Core Tools</strong></p>
-<div class="skill-tags">
-<p><span class="pill">Python</span> <span class="pill">SQL</span> <span class="pill">R</span> <span class="pill">MATLAB</span> <span class="pill">C/C++</span> <span class="pill">FORTRAN</span> <span class="pill">Scala</span> <span class="pill">JavaScript</span> <span class="pill">VBA</span> <span class="pill">Bash</span></p>
-</div>
-<p><strong>High-Performance &amp; Cloud</strong></p>
-<div class="skill-tags">
-<p><span class="pill">Dask</span> <span class="pill">AWS / S3</span> <span class="pill">Coiled</span> <span class="pill">Azure</span> <span class="pill">Snowflake</span> <span class="pill">Docker</span> <span class="pill">SSH / Unix</span> <span class="pill">Distributed Computing</span></p>
-</div>
-<p><strong>Geospatial &amp; Climate</strong></p>
-<div class="skill-tags">
-<p><span class="pill">ArcGIS Pro</span> <span class="pill">QGIS</span> <span class="pill">xESMF Regridding</span> <span class="pill">Zarr / NetCDF</span> <span class="pill">ARCO Standards</span> <span class="pill">GEOS-Chem GCHP</span> <span class="pill">HEMCO</span> <span class="pill">WRF</span> <span class="pill">AERMOD</span> <span class="pill">ENVI</span></p>
-</div>
-<p><strong>Statistical &amp; Scientific Modeling</strong></p>
-<div class="skill-tags">
-<p><span class="pill">Monte Carlo</span> <span class="pill">Bayesian Inference</span> <span class="pill">Uncertainty Quantification</span> <span class="pill">Time-Series Forecasting</span> <span class="pill">Extreme-Value Statistics</span></p>
-</div>
-<p><strong>Instrumentation &amp; Hardware</strong></p>
-<div class="skill-tags">
-<p><span class="pill">System Design &amp; Fabrication</span> <span class="pill">Experimental Instrumentation</span> <span class="pill">Optical Measurement</span> <span class="pill">LTspice Simulation</span> <span class="pill">Precision Calibration</span> <span class="pill">System Diagnostics</span> <span class="pill">AutoCAD</span></p>
-</div>
-<p><strong>Data Engineering &amp; Visualization</strong></p>
-<div class="skill-tags">
-<p><span class="pill">Pipeline Design</span> <span class="pill">Ingestion &amp; Cleaning</span> <span class="pill">Tableau</span> <span class="pill">Power BI</span> <span class="pill">matplotlib</span> <span class="pill">seaborn</span> <span class="pill">hvplot</span> <span class="pill">Quarto</span></p>
-</div>
-<p><strong>Practices</strong></p>
-<div class="skill-tags">
-<p><span class="pill">Git / Jira</span> <span class="pill">CI/CD</span> <span class="pill">Unit Testing</span> <span class="pill">Containerization</span> <span class="pill">API Design</span> <span class="pill">QA/QC</span> <span class="pill">Reproducible Research</span></p>
-</div>
-</div>
+<section id="what-i-built" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-built">What I built</h2>
+<p><strong>Confidence-weighted methodology.</strong> I evaluated competing weighting schemes — linear, exponential, Bayesian model averaging, and a Delphi variant — and selected a confidence-based inverse-weighting approach, so that higher-confidence expert input drives the aggregate score and low-confidence input is damped rather than discarded. The result lets genuine expertise carry more signal without silencing anyone.</p>
+<p><strong>Uncertainty quantification.</strong> Every technology is scored across 7 assessment parameters — Technology Readiness Level, Market Disruption Potential, Economic Impact, Sociopolitical Obstacles, Time to Commercialization, Environmental Impact, and Ease of Implementation — with variance, standard error, and confidence intervals computed per technology per parameter, then normalized to a 0–1 scale for cross-parameter comparison.</p>
+<p><strong>The Python tooling.</strong> I wrote the aggregation and analysis compendium: a converter that parses the proprietary expert-scorecard export and computes per-technology statistics, and a confidence-weighted sensitivity tool that compares weighting schemes across all parameters.</p>
+<p><strong>Driving the methodological upgrade.</strong> The Q4 2024 Pulse Report scored 48 technologies using simple crowd-sourced averaging. For the Q1 2025 report, I introduced the confidence-weighting methodology and helped expand coverage to 69 technologies — the upgrade that took the Radar from a poll to a defensible analytical instrument. I co-authored the resulting Pulse Reports, leading the statistics, methodology, and figures.</p>
 </section>
-<section id="selected-recognition" class="level2">
-<h2 data-anchor-id="selected-recognition">Selected Recognition</h2>
-<ul>
-<li>NASA Pathways Intern (2021–2024)</li>
-<li>NSF Division of Atmospheric &amp; Geospace Sciences, Grant 1950702 (2021–2023)</li>
-<li>PSU Honors College Thesis &amp; Academic Achievement Awards</li>
-<li>President’s Equal Access Scholarship · Vernier STEM Scholarship</li>
-</ul>
+<section id="why-it-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-it-matters">Why it matters</h2>
+<p>Energy R&amp;D portfolios involve enormous bets under deep uncertainty, and the cost of chasing hype instead of substance is measured in years and millions. A rigorous, confidence-aware foresight system helps decision-makers separate genuine signal from enthusiasm — and put resources where they’ll actually move the energy transition forward.</p>
 
 
 </section>
-</main></div>
-</div>
- <!-- /main -->
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

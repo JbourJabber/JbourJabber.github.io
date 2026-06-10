@@ -1,0 +1,67 @@
+---
+title: "Reconciling the Global Ethane Budget"
+description: "First-authored, NSF-funded atmospheric research using global GEOS-Chem simulations and an analytical Bayesian inversion to explain why standard inventories underestimate atmospheric ethane — optimizing emission fluxes across 35 source regions to account for the post-2010 rebound."
+date: 2022-12-01
+categories: [Atmospheric Science, GEOS-Chem, Bayesian Inversion, PSU CCAR]
+---
+
+## The puzzle
+
+Atmospheric ethane is the most abundant non-methane hydrocarbon, co-emitted
+with methane and a driver of tropospheric ozone. There was a stubborn problem
+with it: standard bottom-up emission inventories failed to reproduce what
+instruments actually measured in the atmosphere, especially a puzzling rebound
+in Northern-Hemisphere ethane after 2010. My research, conducted at Portland
+State's Center for Climate and Aerosol Research and funded by NSF Atmospheric &
+Geospace Sciences Grant 1950702, asked why — and whether the gap could be
+closed.
+
+## Establishing the gap
+
+Using the GEOS-Chem high-performance model (GCHP v13.0.2, with MERRA-2
+meteorology, run on the COEUS HPC cluster) and observations from roughly 16 NOAA
+Global Monitoring Laboratory flask sites, I first quantified the discrepancy.
+The baseline model underestimated observed ethane by as much as 500–1000 pptv
+across the Northern Hemisphere, against a strong hemispheric gradient and clear
+seasonal cycle. The conclusion was unambiguous: the standard inventories were
+missing or under-counting real sources.
+
+This baseline comparison became my first-author REU research manuscript (2021).
+
+## Closing it: the Bayesian inversion
+
+Diagnosing the gap is one thing; correcting it rigorously is another. I built an
+analytical Bayesian emission inversion to optimize regional ethane fluxes
+directly from the observations. The technical core:
+
+- A **state vector** of regional emission strengths and an **observation
+  vector** of NOAA concentrations, linked by a **Jacobian (H-matrix)**
+  constructed from tagged-tracer model runs that map each source region to its
+  fingerprint at each measurement site.
+- An **analytical posterior solution** with prior- and observation-error
+  covariances, where the spatial and temporal prior structure was built as a
+  Kronecker product of exponential kernels.
+- Because the system is underdetermined (more unknowns than independent
+  constraints), I solved it via a **singular-value-decomposition pseudo-inverse**
+  rather than a naive matrix inversion that would have been numerically unstable.
+
+Comparing 2007–2008 against 2019–2020 and optimizing fluxes across **35 source
+regions**, the inversion offered a quantitative account of the decade-scale
+ethane trend. I presented this work at the AGU Fall Meeting in 2021 and 2022.
+
+## Why it matters
+
+Ethane and methane are co-emitted by fossil-fuel activity, so getting the ethane
+budget right sharpens our understanding of where hydrocarbon emissions truly
+originate — the foundation of any credible mitigation policy. This was also where
+I learned that good environmental science lives or dies on rigor: a beautiful
+result from an unstable inversion is worthless, and the discipline of doing the
+linear algebra correctly *is* the science.
+
+## Documents
+
+- [REU Research Manuscript (2021)](../files/aljbour-2021-reu-manuscript.pdf) —
+  my first-author manuscript establishing the model-versus-observation ethane
+  gap that motivated the inversion.
+- [Research Symposium Presentation](../files/aljbour-ccar-reu-symposium.pdf) —
+  the presentation of this work delivered at the CCAR/PSU research symposium.

@@ -1,0 +1,33 @@
+---
+title: "Honors Thesis: Methane Capture from Compostables"
+description: "Designed and built a novel anaerobic biogas digester with dual-motor agitation and multi-stage scrubbing, demonstrating ~88–94% CH₄ purity and a ~35% biogas-yield improvement. Earned the PSU Honors College Thesis Achievement Award."
+date: 2022-06-01
+categories: [Renewable Energy, Hardware, Research, PSU]
+---
+
+## The problem
+
+Landfilled compostable waste emits methane, a greenhouse gas far more potent
+than CO₂ over the short term. That same methane, captured, is renewable energy.
+The question was whether a practical digester design could make capture more
+efficient.
+
+## What I built
+
+For my award-winning Honors thesis, I designed and built a novel anaerobic
+biogas digester featuring a dual-motor agitation system and multi-stage gas
+scrubbing.
+
+- Demonstrated approximately **88–94% CH₄ purity** in captured biogas.
+- Achieved a roughly **35% biogas-yield improvement** attributable to
+  agitation.
+- Estimated statewide potential of ~30.3 million MWh of renewable natural gas
+  and ~81,766 tons of avoided CH₄ emissions.
+
+This earned the PSU Honors College Thesis Achievement Award.
+
+## Why it matters
+
+It's a concrete example of the stewardship principle that drives my work:
+turning a pollution problem into an energy solution, backed by measured results
+rather than good intentions.

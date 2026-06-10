@@ -1,0 +1,86 @@
+---
+title: "Research & Publications"
+toc: true
+toc-location: right
+---
+
+A record of my published and presented work across energy-technology
+foresight, AI and data-center energy, atmospheric science, and climate
+mitigation. EPRI reports are public products and link to their catalog
+entries; conference contributions are noted as such.
+
+## Peer-Reviewed & Thesis
+
+**Aljbour, J.** (2022). [*Understanding CH₄ Emissions from Compostables: An
+Exploration of Local CH₄ Emissions from Landfilled Compostables and the
+Efficacy of Emission Mitigation via Anaerobic Biogas
+Digestion.*](https://pdxscholar.library.pdx.edu/honorstheses/1247/) Portland
+State University Honors Theses, Paper 1247.
+[→ Related project](projects/methane-thesis.qmd)
+
+## Industry Research Reports — EPRI
+
+**Aljbour, J.** & Stella, S. (2025). *Technology Radar Pulse Report II.*
+Electric Power Research Institute (pre-publication).
+[→ Related project](projects/technology-radar.qmd)
+
+**Aljbour, J.** & Jagdale, A. (2024). [*EPRI Quick Insight — Data Center Heat
+Reuse.*](https://www.epri.com/research/products/000000003002031316) Electric
+Power Research Institute (3002031316).
+[→ Related project](projects/ai-datacenter-energy.qmd)
+
+**Aljbour, J.** & Patel, P. (2024). [*Technology Radar Pulse
+Report.*](https://www.epri.com/research/products/000000003002031179) Electric
+Power Research Institute (3002031179).
+[→ Related project](projects/technology-radar.qmd)
+
+**Aljbour, J.**, Wilson, T., & Patel, P. (2024). [*Powering Intelligence:
+Analyzing Artificial Intelligence and Data Center Energy
+Consumption.*](https://www.epri.com/research/products/000000003002028905)
+Electric Power Research Institute (3002028905).
+[→ Related project](projects/ai-datacenter-energy.qmd)
+
+**Aljbour, J.** & Vij, P. (2024). [*Long-Duration Energy Storage: Emerging
+Pilot Project
+Summaries.*](https://www.epri.com/research/products/000000003002029144)
+Electric Power Research Institute (3002029144).
+
+**Aljbour, J.** (2024). [*Navigating EPRI's Technology Radar: User Navigation
+Manual.*](https://www.epri.com/research/products/000000003002029524) Electric
+Power Research Institute (3002029524).
+[→ Related project](projects/technology-radar.qmd)
+
+**Aljbour, J.** & Neary, B. (2023). [*Program on Technology Innovation: EPRI
+Insights — Navigating Cyber Security in Energy Grids, A Roadmap for Resilience
+and Innovation.*](https://www.epri.com/research/products/000000003002028129)
+Electric Power Research Institute (3002028129).
+
+**Aljbour, J.** (2023). [*Power Consumption Trends from Increased AI and Data
+Center Utilization.*](https://www.epri.com/research/products/000000003002027934)
+Electric Power Research Institute (3002027934).
+[→ Related project](projects/ai-datacenter-energy.qmd)
+
+## Conference Presentations
+
+*Atmospheric Ethane Emission Reconciliation Research, Portland State University CCAR (NSF Grant
+1950702). Presented as conference abstracts and posters.*
+[→ Related project](projects/ethane-budget-inversion.qmd)
+
+**Aljbour, J.** & Butenhoff, C. (2022). [Conference presentation on an analytical
+Bayesian inversion of global ethane emission trends (2007–2020), optimizing
+fluxes across 35 source regions.](files/aljbour-agu-2022-abstract.pdf)
+American Geophysical Union Fall Meeting.
+[→ Related project](projects/ethane-budget-inversion.qmd)
+
+**Aljbour, J.**, et al. (2021). [Conference presentation on reconciling the
+global ethane budget through optimized emission scenarios in the GEOS-Chem
+model.](files/aljbour-agu-2021-abstract.pdf) American Geophysical Union
+Fall Meeting.
+[→ Related project](projects/ethane-budget-inversion.qmd)
+
+## Applied & Geospatial Work
+
+**Aljbour, J.** (2022). [*GIS Analysis of Greenhouse Gas Emissions in Portland,
+OR.*](https://storymaps.arcgis.com/stories/1d54b8711e2e477fa5a97a5237abd3ef) ArcGIS
+StoryMap. An interactive consumption- and industry-sector greenhouse-gas
+mapping of the Portland metro region.

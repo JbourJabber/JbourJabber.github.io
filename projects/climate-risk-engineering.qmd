@@ -1,0 +1,85 @@
+---
+title: "ClimateSight: Climate Risk Engineering for Grid Infrastructure"
+description: "The core of a cloud-native climate-risk platform at ICF that quantifies financial risk to electric-utility assets — a 7-stage climate data pipeline, physics-based asset-impact models, and a Monte Carlo consequence engine producing loss-exceedance curves."
+date: 2025-06-01
+categories: [Climate Risk, HPC, Dask, Monte Carlo, ICF]
+---
+
+## The problem
+
+Electric utilities own physical assets — poles, powerlines, transformers,
+substations — that fail or degrade faster under climate stress. The planner's
+real question, *how much will a warming climate cost this fleet, and where is
+the risk concentrated?*, can't be answered by a single model. It needs a
+trustworthy chain: from raw climate projections, through analysis-ready data,
+through physics-based impact models, to defensible cost distributions a
+decision-maker can act on.
+
+At ICF, I designed and built the core of **ClimateSight**, a platform that
+delivers exactly that chain. The system ingests climate-model output, regrids
+and standardizes it to cloud-native datasets, runs per-asset impact models, and
+produces Monte Carlo cost distributions and loss-exceedance curves.
+
+## The climate data pipeline
+
+The foundation is a 7-stage, separation-of-concerns pipeline that turns raw
+climate output into analysis-ready Zarr cubes on S3:
+
+- **Schema & time policy** — CF-compliance and a UTC-only time standard that
+  eliminates daylight-saving duplicate-timestamp ambiguities at the source.
+- **Lazy, S3-backed ingestion** of CONUS404 and ERA5 via Intake/HyTest catalogs.
+- **Regridding** from native projection to WGS84 via xESMF, with regrid-weight
+  caching that delivers roughly **4× faster** rebuilds.
+- **Derived-variable transforms, per-variable Zarr cube construction**, and
+  Dask cluster management on Coiled AWS profiles.
+- **Metadata consolidation** that cut S3 GET requests from 100+ to 1–2,
+  bringing dataset open times from ~30 seconds to under 1 second.
+
+Across refactoring the experimental codebase into modular, tested, containerized
+packages and this performance engineering, I cut runtime and peak memory use by
+**40%+**.
+
+## Asset-impact models
+
+On top of the data layer sit physics-based impact models for four asset classes:
+
+- **Poles** — lognormal wind fragility curves integrated against the wind
+  distribution, with age-dependent strength decay.
+- **Powerlines** — thermal ampacity derating coupling temperature, wind, and
+  solar load (IEEE-738-aligned).
+- **Substations** — flood vulnerability via Gumbel/GEV extreme-value fitting to
+  return-period levels.
+- **Transformers** — IEEE C57.91 / Arrhenius-based insulation-aging (hotspot
+  temperature to aging-acceleration to lifespan loss). *Transformer modeling was
+  a collaborative effort with a colleague.*
+
+## The consequence engine
+
+A Monte Carlo cost simulation combines Bernoulli failure masking with
+cost draws (lognormal, CV-parameterized) to produce loss-exceedance curves —
+with Dask-safe monotonicity enforcement — plus Value-at-Risk, tail-VaR, and
+expected-annual-loss, reported with ensemble uncertainty bands across climate
+models and scenarios.
+
+## Hazard standardization & synchronized risk deltas
+
+A distinguishing piece of the work was a configuration-driven pipeline that
+standardizes raw CoSMoS coastal-flood data — reprojecting from UTM to geographic
+coordinates into paired historic and future Zarr cubes — and a **synchronized
+Monte Carlo sampler** that applies *identical* random draws to both climate
+scenarios. This isolates the true climate signal from sampling noise, so a
+computed risk delta reflects climate change rather than randomness. It was a
+methodological requirement from the science lead, and it's the kind of detail
+that separates a result you can defend from one you can't. An automated
+paired-dataset validation framework checks dimensional and coordinate
+synchronization before any risk math runs.
+
+*The system's formal climate and flood data contracts, and the overall
+architecture, were developed collaboratively with the ICF team.*
+
+## Why it matters
+
+Climate adaptation budgets are finite. By engineering the full path from raw
+projection to quantified, uncertainty-aware risk — and refusing to hide that
+uncertainty — this work helps utilities direct hardening investment where it
+protects the most people per dollar.

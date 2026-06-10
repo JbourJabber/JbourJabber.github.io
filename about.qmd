@@ -1,5 +1,116 @@
 ---
-title: "About"
+title: "Jordan Y. Aljbour"
+about:
+  template: trestles
+  image-shape: round
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/JbourJabber
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/jordan-aljbour-57a964226/
+    - icon: envelope
+      text: Email
+      href: mailto:Jordanaljbour@gmail.com
 ---
 
-About this site
+I'm a multidisciplinary computational scientist based in Portland, Oregon,
+working where climate physics, energy systems, and software engineering meet.
+I came to this work as an environmentalist first, convinced that we have a
+real responsibility to be the best stewards of this planet we can be, and I've
+spent my career making sure that conviction is backed by rigorous data rather
+than good intentions alone. I specialize in large-scale environmental and
+energy data: the kind that's too big for memory, too messy for spreadsheets,
+and far too consequential to get wrong.
+
+Most recently, as a Senior Python Developer in parallel computing at ICF, I
+refactored experimental climate workflows into production-grade, Dask-optimized
+packages running across HPC and cloud clusters, and standardized analysis-ready
+geospatial data (Zarr/NetCDF on AWS S3). That work underpinned climate-risk
+tooling for the physical energy infrastructure our communities depend on, from
+transformers to coastal substations.
+
+Earlier, at the Electric Power Research Institute, I designed the statistical
+methodology and backend behind EPRI's Technology Radar, a confidence-weighted
+foresight platform spanning roughly 69 energy technologies, and authored
+widely-referenced analyses of AI and data-center energy demand. My scientific
+foundation comes from Portland State's Center for Climate and Aerosol Research,
+where I ran global atmospheric-chemistry simulations (GEOS-Chem) and analytical
+Bayesian emission inversions to investigate the methane and ethane trends
+driving a changing atmosphere.
+
+My approach blends technical rigor with clear communication, and it's rooted in
+a simple belief: the better we understand our impact on the planet, the better
+we can choose to protect it. I care as much about reproducibility, documentation,
+and helping teams move together as I do about the models themselves, because work
+this important shouldn't live or die with one person.
+
+## Education
+
+**B.S., Applied Environmental Physics** (Honors) — Portland State University
+Dual minors in Geographic Information Systems & Mathematics
+
+## Certifications
+
+- **Certified Energy Manager (CEM)** — Association of Energy Engineers *(in progress, 2026)*
+- **Certified Sustainable Development Professional (CSDP)** — Association of Energy Engineers *(in progress, 2026)*
+- **IBM Data Science Professional Certificate** — IBM (2025)
+- **Google Advanced Data Analytics Professional Certificate** — Google (2024)
+- **GHG Protocol Scope 2 & 3 Certificates** — World Resources Institute (2023)
+- **GHG Accounting Certificate** — Corporate Finance Institute (2023)
+
+## Technical Skills
+
+::: {.skills-section}
+
+**Languages & Core Tools**
+
+::: {.skill-tags}
+[Python]{.pill} [SQL]{.pill} [R]{.pill} [MATLAB]{.pill} [C/C++]{.pill} [FORTRAN]{.pill} [Scala]{.pill} [JavaScript]{.pill} [VBA]{.pill} [Bash]{.pill}
+:::
+
+**High-Performance & Cloud**
+
+::: {.skill-tags}
+[Dask]{.pill} [AWS / S3]{.pill} [Coiled]{.pill} [Azure]{.pill} [Snowflake]{.pill} [Docker]{.pill} [SSH / Unix]{.pill} [Distributed Computing]{.pill}
+:::
+
+**Geospatial & Climate**
+
+::: {.skill-tags}
+[ArcGIS Pro]{.pill} [QGIS]{.pill} [xESMF Regridding]{.pill} [Zarr / NetCDF]{.pill} [ARCO Standards]{.pill} [GEOS-Chem GCHP]{.pill} [HEMCO]{.pill} [WRF]{.pill} [AERMOD]{.pill} [ENVI]{.pill}
+:::
+
+**Statistical & Scientific Modeling**
+
+::: {.skill-tags}
+[Monte Carlo]{.pill} [Bayesian Inference]{.pill} [Uncertainty Quantification]{.pill} [Time-Series Forecasting]{.pill} [Extreme-Value Statistics]{.pill}
+:::
+
+**Instrumentation & Hardware**
+
+::: {.skill-tags}
+[System Design & Fabrication]{.pill} [Experimental Instrumentation]{.pill} [Optical Measurement]{.pill} [LTspice Simulation]{.pill} [Precision Calibration]{.pill} [System Diagnostics]{.pill} [AutoCAD]{.pill}
+:::
+
+**Data Engineering & Visualization**
+
+::: {.skill-tags}
+[Pipeline Design]{.pill} [Ingestion & Cleaning]{.pill} [Tableau]{.pill} [Power BI]{.pill} [matplotlib]{.pill} [seaborn]{.pill} [hvplot]{.pill} [Quarto]{.pill}
+:::
+
+**Practices**
+
+::: {.skill-tags}
+[Git / Jira]{.pill} [CI/CD]{.pill} [Unit Testing]{.pill} [Containerization]{.pill} [API Design]{.pill} [QA/QC]{.pill} [Reproducible Research]{.pill}
+:::
+
+:::
+
+## Selected Recognition
+
+- NASA Pathways Intern (2021–2024)
+- NSF Division of Atmospheric & Geospace Sciences, Grant 1950702 (2021–2023)
+- PSU Honors College Thesis & Academic Achievement Awards
+- President's Equal Access Scholarship · Vernier STEM Scholarship

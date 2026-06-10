@@ -1,0 +1,70 @@
+---
+title: "Anaerobic Biogas Digester: From Bench Build to Statewide Model"
+description: "My sole-authored Honors thesis: I designed, built, and instrumented a novel domestic-scale anaerobic biogas digester to capture methane from household compostables, then built a GIS-backed model of what statewide adoption could mean for Oregon's renewable energy and emissions."
+date: 2022-06-01
+categories: [Renewable Energy, Hardware, GIS, PSU Honors Thesis]
+---
+
+## The idea
+
+Methane is a high-leverage near-term climate target: tens of times more potent
+than CO₂ over its roughly twelve-year atmospheric lifetime. A large, overlooked
+source is compostable waste rotting in landfills. But that same methane,
+captured instead of vented, is renewable energy. My Honors thesis at Portland
+State asked a practical, three-part question: how much methane does Oregon's
+landfilled compostable waste actually produce, how well can anaerobic digestion
+mitigate it, and could a digester affordable enough for a household backyard
+make a real dent?
+
+## The built artifact
+
+Rather than only model the idea, I designed, built, and instrumented a working
+digester from accessible materials — HMWPE 55-gallon drums and PVC — for roughly
+$800, about half the cost of a comparable commercial unit. It integrated six
+subsystems, documented across six AutoCAD schematics, including:
+
+- A central digestion tank with separated bioslurry and biogas headspace.
+- A water-displacement methane collection tank with an autonomous
+  over-pressure relief design.
+- A **dual-motor agitation system** on a programmed timer — the novel element,
+  which raised measured biogas yield by roughly 35% over passive digestion.
+- A **multi-stage chemical scrubbing train** (sequential H₂S, CO₂, and water
+  removal) that achieved 88–94% methane purity.
+- Compression and storage for appliance use, plus a fire-safety analysis for
+  its real backyard installation.
+
+## What the pilot showed
+
+Over a 90-day pilot run, I tracked feedstock mass, slurry pH, temperature,
+pressure, and power draw weekly, deriving captured biogas mass via the ideal gas
+law. The run processed about 102 kg of household compostable waste and
+sequestered methane convertible to usable thermal, electrical, and mechanical
+energy. It also taught a real lesson in physical constraints: production stayed
+sluggish until an unusually cold Oregon spring finally warmed past about 60 °F,
+a reminder that bench results live at the mercy of the environment.
+
+## Scaling the question with GIS
+
+A working backyard unit is a proof of concept; the interesting question is what
+happens at scale. I built a waste-to-methane-to-renewable-gas model across three
+demographic scales — statewide, Oregon's ten largest cities, and nine federally
+recognized tribes — using EPA generation rates, Oregon DEQ waste data, and
+climate-adjusted emission factors. I classified communities by NLCD land cover
+and Köppen-Geiger climate, applying climate-specific methane factors and
+producing thematic maps and zonal statistics.
+
+The model suggested that broad adoption could divert on the order of 967,000
+tons of waste annually, generate roughly 30 million MWh of renewable natural
+gas, and curtail around 82,000 tons of methane per year — enough to meaningfully
+shift Oregon's renewable energy share. The GIS analysis also surfaced a stark
+equity gap: urban communities recovered only about 4% of their compostables
+against roughly 72% for rural ones.
+
+## Why it matters
+
+This is the project that crystallized why I do this work. It runs the whole arc
+I care about — designing hardware, measuring honestly, modeling impact, and
+mapping who's left out — in service of turning a pollution problem into an
+energy solution. It earned recognition from PSU's Honors College, but more than
+that, it's the clearest statement of the stewardship that drives everything
+else on this site.
