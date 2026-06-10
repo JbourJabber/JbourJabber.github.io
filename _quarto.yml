@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources: 
     - files/
+    - CNAME
 
 website:
   title: "Jordan Y. Aljbour"
