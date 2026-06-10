@@ -6,7 +6,7 @@ project:
     - CNAME
 
 website:
-  title: "Jordan Y. Aljbour"
+  title: ""
   navbar:
     left:
       - href: index.qmd
@@ -17,6 +17,11 @@ website:
         text: Projects
       - href: about.qmd
         text: About
+    right:
+      - text: "Download CV"
+        href: files/jordan-aljbour-cv.pdf
+        target: _blank
+        rel: noopener
 
 format:
   html:

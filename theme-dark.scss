@@ -221,3 +221,23 @@ a:hover {
   border-color: rgba(76, 175, 114, 0.55);
   transform: translateY(-1px);
 }
+
+// ---- Navbar CV button ----
+.navbar-nav.ms-auto .nav-link,
+.navbar .navbar-nav:last-child .nav-item:last-child .nav-link {
+  background-color: #4caf72;
+  color: #0e1113 !important;
+  border-radius: 999px;
+  padding: 0.35rem 1rem !important;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.navbar-nav.ms-auto .nav-link:hover,
+.navbar .navbar-nav:last-child .nav-item:last-child .nav-link:hover {
+  background-color: #6fd894;
+  color: #0e1113 !important;
+  transform: translateY(-1px);
+}
