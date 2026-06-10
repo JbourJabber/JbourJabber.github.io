@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Jordan Y. Aljbour</title>
+<title>Projects – Jordan Y. Aljbour</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,6 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -70,10 +72,68 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -96,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -104,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Research &amp; Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link active" href="./projects.html" aria-current="page"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -122,52 +182,179 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="QUk=">AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXRtb3NwaGVyaWMlMjBTY2llbmNl">Atmospheric Science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QmF5ZXNpYW4lMjBJbnZlcnNpb24=">Bayesian Inversion <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2xpbWF0ZSUyMFJpc2s=">Climate Risk <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGFzaw==">Dask <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RW5lcmd5JTIwQW5hbHl0aWNz">Energy Analytics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RVBSSQ==">EPRI <span class="quarto-category-count">(2)</span></div><div class="category" data-category="R0VPUy1DaGVt">GEOS-Chem <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R0lT">GIS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SGFyZHdhcmU=">Hardware <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SFBD">HPC <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SUNG">ICF <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TW9udGUlMjBDYXJsbw==">Monte Carlo <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UFNVJTIwQ0NBUg==">PSU CCAR <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UFNVJTIwSG9ub3JzJTIwVGhlc2lz">PSU Honors Thesis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHVibGljYXRpb24=">Publication <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVuZXdhYmxlJTIwRW5lcmd5">Renewable Energy <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3RhdGlzdGljcw==">Statistics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VGVjaG5vbG9neSUyMEZvcmVzaWdodA==">Technology Foresight <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page-left" id="quarto-document-content">
 
-
-
-
-<section id="jordan-y.-aljbour" class="level1 hero-title hero-banner">
-<h1 class="hero-title">Jordan Y. Aljbour</h1>
-<section id="climate-energy-researcher-computational-scientist-python-developer" class="level3 hero-subtitle">
-<h3 class="hero-subtitle anchored" data-anchor-id="climate-energy-researcher-computational-scientist-python-developer">Climate &amp; Energy Researcher · Computational Scientist · Python Developer</h3>
-<p>A computational and data scientist working at the intersection of climate science, energy systems, and high-performance computing — turning complex physical datasets into reproducible, decision-grade tools.</p>
-<p><a href="./research.html" class="btn btn-accent" role="button">View Research</a> <a href="./projects.html" class="btn btn-accent-outline" role="button">See Projects</a> <a href="https://github.com/JbourJabber" class="btn btn-accent-outline" role="button">GitHub</a></p>
-</section>
-</section>
-<section id="at-a-glance" class="level2">
-<h2 class="anchored" data-anchor-id="at-a-glance">At a glance</h2>
-<div class="grid">
-<section id="section" class="level3 g-col-12 g-col-md-3 stat-card">
-<h3 class="anchored" data-anchor-id="section">40%+</h3>
-<p>Runtime &amp; memory cut on distributed HPC pipelines running 10k+ Monte Carlo samples per scenario</p>
-</section>
-<section id="section-1" class="level3 g-col-12 g-col-md-3 stat-card">
-<h3 class="anchored" data-anchor-id="section-1">69</h3>
-<p>Energy technologies scored in <a href="https://epritechradar.epri.com/?pg=home">EPRI’s Technology Radar</a> methodology</p>
-</section>
-<section id="section-2" class="level3 g-col-12 g-col-md-3 stat-card">
-<h3 class="anchored" data-anchor-id="section-2">10+</h3>
-<p>Peer &amp; industry publications across energy and climate science</p>
-</section>
-<section id="section-3" class="level3 g-col-12 g-col-md-3 stat-card">
-<h3 class="anchored" data-anchor-id="section-3">6</h3>
-<p>Professional certifications earned or in progress (AEE, IBM, Google, WRI)</p>
-</section>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Projects</h1>
 </div>
-</section>
-<section id="what-i-do" class="level2">
-<h2 class="anchored" data-anchor-id="what-i-do">What I do</h2>
-<p>I build the computational machinery behind environmental and energy decisions, because I believe the people making those decisions deserve the clearest possible picture of what’s at stake. That conviction shapes how I work. I write end-to-end, reproducible scientific software: distributed data pipelines, statistical and risk models, and analysis-ready geospatial tooling, engineered to scale from a laptop to HPC and cloud clusters without ever cutting corners on rigor or reproducibility.</p>
-<p>The questions I take on are the ones where the science has real consequences for the planet. <em>How much will a warming climate cost our aging energy infrastructure? What will AI and data centers truly demand from the grid? How are global methane and ethane emissions actually trending, and where can we intervene?</em> I turn messy physical data into honest tools that answer those questions with quantified uncertainty, because good stewardship starts with telling the truth about the numbers.</p>
-<p>Most recently, as a Senior Python Developer in parallel computing at ICF, I converted experimental climate workflows into modular, tested, containerized Python packages. I engineered Dask pipelines for out-of-core processing and standardized ARCO-compliant geospatial formats (Zarr, NetCDF) on AWS S3, cutting runtime and memory by 40%+ in the process.</p>
 
 
-</section>
 
-</main> <!-- /main -->
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>A selection of work spanning climate-risk engineering, energy-technology foresight, atmospheric modeling, and geospatial analysis. Each project pairs rigorous computation with a real decision it was built to inform.</p>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title" data-direction="asc">
+        Title
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="RW5lcmd5JTIwQW5hbHl0aWNzJTJDQUklMkNQdWJsaWNhdGlvbiUyQ0VQUkk=" data-listing-date-sort="1714546800000" data-listing-file-modified-sort="1781126299076" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="330">
+<a href="./projects/ai-datacenter-energy.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+AI &amp; Data-Center Energy Demand
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('RW5lcmd5JTIwQW5hbHl0aWNz'); return false;">Energy Analytics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QUk='); return false;">AI</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHVibGljYXRpb24='); return false;">Publication</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RVBSSQ=='); return false;">EPRI</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Co-author of EPRI’s widely-referenced analysis projecting U.S. data-center electricity demand through 2030 — quantifying how AI could push data centers from ~4% toward 9% of…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Q2xpbWF0ZSUyMFJpc2slMkNIUEMlMkNEYXNrJTJDTW9udGUlMjBDYXJsbyUyQ0lDRg==" data-listing-date-sort="1748761200000" data-listing-file-modified-sort="1781126128702" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="505">
+<a href="./projects/climate-risk-engineering.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+ClimateSight: Climate Risk Engineering for Grid Infrastructure
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q2xpbWF0ZSUyMFJpc2s='); return false;">Climate Risk</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SFBD'); return false;">HPC</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGFzaw=='); return false;">Dask</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TW9udGUlMjBDYXJsbw=='); return false;">Monte Carlo</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SUNG'); return false;">ICF</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>The core of a cloud-native climate-risk platform at ICF that quantifies financial risk to electric-utility assets — a 7-stage climate data pipeline, physics-based…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="QXRtb3NwaGVyaWMlMjBTY2llbmNlJTJDR0VPUy1DaGVtJTJDQmF5ZXNpYW4lMjBJbnZlcnNpb24lMkNQU1UlMjBDQ0FS" data-listing-date-sort="1669881600000" data-listing-file-modified-sort="1781129501266" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="408">
+<a href="./projects/ethane-budget-inversion.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Reconciling the Global Ethane Budget
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QXRtb3NwaGVyaWMlMjBTY2llbmNl'); return false;">Atmospheric Science</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R0VPUy1DaGVt'); return false;">GEOS-Chem</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('QmF5ZXNpYW4lMjBJbnZlcnNpb24='); return false;">Bayesian Inversion</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UFNVJTIwQ0NBUg=='); return false;">PSU CCAR</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>First-authored, NSF-funded atmospheric research using global GEOS-Chem simulations and an analytical Bayesian inversion to explain why standard inventories underestimate…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="UmVuZXdhYmxlJTIwRW5lcmd5JTJDSGFyZHdhcmUlMkNHSVMlMkNQU1UlMjBIb25vcnMlMjBUaGVzaXM=" data-listing-date-sort="1654066800000" data-listing-file-modified-sort="1781127367341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="476">
+<a href="./projects/methane-thesis.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Anaerobic Biogas Digester: From Bench Build to Statewide Model
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVuZXdhYmxlJTIwRW5lcmd5'); return false;">Renewable Energy</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SGFyZHdhcmU='); return false;">Hardware</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R0lT'); return false;">GIS</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UFNVJTIwSG9ub3JzJTIwVGhlc2lz'); return false;">PSU Honors Thesis</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>My sole-authored Honors thesis: I designed, built, and instrumented a novel domestic-scale anaerobic biogas digester to capture methane from household compostables, then…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="VGVjaG5vbG9neSUyMEZvcmVzaWdodCUyQ1N0YXRpc3RpY3MlMkNQeXRob24lMkNFUFJJ" data-listing-date-sort="1727766000000" data-listing-file-modified-sort="1781126228791" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="338">
+<a href="./projects/technology-radar.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+EPRI Technology Radar: Methodology &amp; Platform
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('VGVjaG5vbG9neSUyMEZvcmVzaWdodA=='); return false;">Technology Foresight</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3RhdGlzdGljcw=='); return false;">Statistics</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RVBSSQ=='); return false;">EPRI</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>I designed and architected the statistical methodology and software backbone behind EPRI’s flagship technology-foresight platform — a confidence-weighted system that turns…</p>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

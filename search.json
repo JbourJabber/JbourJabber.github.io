@@ -1,16 +1,331 @@
 [
   {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research & Publications",
+    "section": "",
+    "text": "A record of my published and presented work across energy-technology foresight, AI and data-center energy, atmospheric science, and climate mitigation. EPRI reports are public products and link to their catalog entries; conference contributions are noted as such."
+  },
+  {
+    "objectID": "research.html#peer-reviewed-thesis",
+    "href": "research.html#peer-reviewed-thesis",
+    "title": "Research & Publications",
+    "section": "Peer-Reviewed & Thesis",
+    "text": "Peer-Reviewed & Thesis\nAljbour, J. (2022). Understanding CH₄ Emissions from Compostables: An Exploration of Local CH₄ Emissions from Landfilled Compostables and the Efficacy of Emission Mitigation via Anaerobic Biogas Digestion. Portland State University Honors Theses, Paper 1247. → Related project"
+  },
+  {
+    "objectID": "research.html#industry-research-reports-epri",
+    "href": "research.html#industry-research-reports-epri",
+    "title": "Research & Publications",
+    "section": "Industry Research Reports — EPRI",
+    "text": "Industry Research Reports — EPRI\nAljbour, J. & Stella, S. (2025). Technology Radar Pulse Report II. Electric Power Research Institute (pre-publication). → Related project\nAljbour, J. & Jagdale, A. (2024). EPRI Quick Insight — Data Center Heat Reuse. Electric Power Research Institute (3002031316). → Related project\nAljbour, J. & Patel, P. (2024). Technology Radar Pulse Report. Electric Power Research Institute (3002031179). → Related project\nAljbour, J., Wilson, T., & Patel, P. (2024). Powering Intelligence: Analyzing Artificial Intelligence and Data Center Energy Consumption. Electric Power Research Institute (3002028905). → Related project\nAljbour, J. & Vij, P. (2024). Long-Duration Energy Storage: Emerging Pilot Project Summaries. Electric Power Research Institute (3002029144).\nAljbour, J. (2024). Navigating EPRI’s Technology Radar: User Navigation Manual. Electric Power Research Institute (3002029524). → Related project\nAljbour, J. & Neary, B. (2023). Program on Technology Innovation: EPRI Insights — Navigating Cyber Security in Energy Grids, A Roadmap for Resilience and Innovation. Electric Power Research Institute (3002028129).\nAljbour, J. (2023). Power Consumption Trends from Increased AI and Data Center Utilization. Electric Power Research Institute (3002027934). → Related project"
+  },
+  {
+    "objectID": "research.html#conference-presentations",
+    "href": "research.html#conference-presentations",
+    "title": "Research & Publications",
+    "section": "Conference Presentations",
+    "text": "Conference Presentations\nAtmospheric Ethane Emission Reconciliation Research, Portland State University CCAR (NSF Grant 1950702). Presented as conference abstracts and posters. → Related project\nAljbour, J. & Butenhoff, C. (2022). Conference presentation on an analytical Bayesian inversion of global ethane emission trends (2007–2020), optimizing fluxes across 35 source regions. American Geophysical Union Fall Meeting. → Related project\nAljbour, J., et al. (2021). Conference presentation on reconciling the global ethane budget through optimized emission scenarios in the GEOS-Chem model. American Geophysical Union Fall Meeting. → Related project"
+  },
+  {
+    "objectID": "research.html#applied-geospatial-work",
+    "href": "research.html#applied-geospatial-work",
+    "title": "Research & Publications",
+    "section": "Applied & Geospatial Work",
+    "text": "Applied & Geospatial Work\nAljbour, J. (2022). GIS Analysis of Greenhouse Gas Emissions in Portland, OR. ArcGIS StoryMap. An interactive consumption- and industry-sector greenhouse-gas mapping of the Portland metro region."
+  },
+  {
+    "objectID": "projects/technology-radar.html",
+    "href": "projects/technology-radar.html",
+    "title": "EPRI Technology Radar: Methodology & Platform",
+    "section": "",
+    "text": "I functioned as the data architect for EPRI’s Technology Radar, designing the statistical methodology, building the Python aggregation tooling, and authoring the backend, front-end, and methods documentation behind the institute’s flagship technology-foresight product. It’s the work I’m proudest of from my time at EPRI: a system that had to be both statistically rigorous and trusted by the experts whose judgment it encoded."
+  },
+  {
+    "objectID": "projects/technology-radar.html#my-role",
+    "href": "projects/technology-radar.html#my-role",
+    "title": "EPRI Technology Radar: Methodology & Platform",
+    "section": "",
+    "text": "I functioned as the data architect for EPRI’s Technology Radar, designing the statistical methodology, building the Python aggregation tooling, and authoring the backend, front-end, and methods documentation behind the institute’s flagship technology-foresight product. It’s the work I’m proudest of from my time at EPRI: a system that had to be both statistically rigorous and trusted by the experts whose judgment it encoded."
+  },
+  {
+    "objectID": "projects/technology-radar.html#the-hard-problem",
+    "href": "projects/technology-radar.html#the-hard-problem",
+    "title": "EPRI Technology Radar: Methodology & Platform",
+    "section": "The hard problem",
+    "text": "The hard problem\nTechnology foresight runs on expert opinion, and expert opinion is uneven. Some assessments come from deep specialists with high confidence; others are educated guesses. Treat them all equally and your scores are noise dressed up as signal. The central challenge was turning subjective, variably-confident input from roughly 80 subject-matter experts into scores that decision-makers could defend when allocating R&D budgets."
+  },
+  {
+    "objectID": "projects/technology-radar.html#what-i-built",
+    "href": "projects/technology-radar.html#what-i-built",
+    "title": "EPRI Technology Radar: Methodology & Platform",
+    "section": "What I built",
+    "text": "What I built\nConfidence-weighted methodology. I evaluated competing weighting schemes — linear, exponential, Bayesian model averaging, and a Delphi variant — and selected a confidence-based inverse-weighting approach, so that higher-confidence expert input drives the aggregate score and low-confidence input is damped rather than discarded. The result lets genuine expertise carry more signal without silencing anyone.\nUncertainty quantification. Every technology is scored across 7 assessment parameters — Technology Readiness Level, Market Disruption Potential, Economic Impact, Sociopolitical Obstacles, Time to Commercialization, Environmental Impact, and Ease of Implementation — with variance, standard error, and confidence intervals computed per technology per parameter, then normalized to a 0–1 scale for cross-parameter comparison.\nThe Python tooling. I wrote the aggregation and analysis compendium: a converter that parses the proprietary expert-scorecard export and computes per-technology statistics, and a confidence-weighted sensitivity tool that compares weighting schemes across all parameters.\nDriving the methodological upgrade. The Q4 2024 Pulse Report scored 48 technologies using simple crowd-sourced averaging. For the Q1 2025 report, I introduced the confidence-weighting methodology and helped expand coverage to 69 technologies — the upgrade that took the Radar from a poll to a defensible analytical instrument. I co-authored the resulting Pulse Reports, leading the statistics, methodology, and figures."
+  },
+  {
+    "objectID": "projects/technology-radar.html#why-it-matters",
+    "href": "projects/technology-radar.html#why-it-matters",
+    "title": "EPRI Technology Radar: Methodology & Platform",
+    "section": "Why it matters",
+    "text": "Why it matters\nEnergy R&D portfolios involve enormous bets under deep uncertainty, and the cost of chasing hype instead of substance is measured in years and millions. A rigorous, confidence-aware foresight system helps decision-makers separate genuine signal from enthusiasm — and put resources where they’ll actually move the energy transition forward."
+  },
+  {
+    "objectID": "projects/ethane-budget-inversion.html",
+    "href": "projects/ethane-budget-inversion.html",
+    "title": "Reconciling the Global Ethane Budget",
+    "section": "",
+    "text": "Atmospheric ethane is the most abundant non-methane hydrocarbon, co-emitted with methane and a driver of tropospheric ozone. There was a stubborn problem with it: standard bottom-up emission inventories failed to reproduce what instruments actually measured in the atmosphere, especially a puzzling rebound in Northern-Hemisphere ethane after 2010. My research, conducted at Portland State’s Center for Climate and Aerosol Research and funded by NSF Atmospheric & Geospace Sciences Grant 1950702, asked why — and whether the gap could be closed."
+  },
+  {
+    "objectID": "projects/ethane-budget-inversion.html#the-puzzle",
+    "href": "projects/ethane-budget-inversion.html#the-puzzle",
+    "title": "Reconciling the Global Ethane Budget",
+    "section": "",
+    "text": "Atmospheric ethane is the most abundant non-methane hydrocarbon, co-emitted with methane and a driver of tropospheric ozone. There was a stubborn problem with it: standard bottom-up emission inventories failed to reproduce what instruments actually measured in the atmosphere, especially a puzzling rebound in Northern-Hemisphere ethane after 2010. My research, conducted at Portland State’s Center for Climate and Aerosol Research and funded by NSF Atmospheric & Geospace Sciences Grant 1950702, asked why — and whether the gap could be closed."
+  },
+  {
+    "objectID": "projects/ethane-budget-inversion.html#establishing-the-gap",
+    "href": "projects/ethane-budget-inversion.html#establishing-the-gap",
+    "title": "Reconciling the Global Ethane Budget",
+    "section": "Establishing the gap",
+    "text": "Establishing the gap\nUsing the GEOS-Chem high-performance model (GCHP v13.0.2, with MERRA-2 meteorology, run on the COEUS HPC cluster) and observations from roughly 16 NOAA Global Monitoring Laboratory flask sites, I first quantified the discrepancy. The baseline model underestimated observed ethane by as much as 500–1000 pptv across the Northern Hemisphere, against a strong hemispheric gradient and clear seasonal cycle. The conclusion was unambiguous: the standard inventories were missing or under-counting real sources.\nThis baseline comparison became my first-author REU research manuscript (2021)."
+  },
+  {
+    "objectID": "projects/ethane-budget-inversion.html#closing-it-the-bayesian-inversion",
+    "href": "projects/ethane-budget-inversion.html#closing-it-the-bayesian-inversion",
+    "title": "Reconciling the Global Ethane Budget",
+    "section": "Closing it: the Bayesian inversion",
+    "text": "Closing it: the Bayesian inversion\nDiagnosing the gap is one thing; correcting it rigorously is another. I built an analytical Bayesian emission inversion to optimize regional ethane fluxes directly from the observations. The technical core:\n\nA state vector of regional emission strengths and an observation vector of NOAA concentrations, linked by a Jacobian (H-matrix) constructed from tagged-tracer model runs that map each source region to its fingerprint at each measurement site.\nAn analytical posterior solution with prior- and observation-error covariances, where the spatial and temporal prior structure was built as a Kronecker product of exponential kernels.\nBecause the system is underdetermined (more unknowns than independent constraints), I solved it via a singular-value-decomposition pseudo-inverse rather than a naive matrix inversion that would have been numerically unstable.\n\nComparing 2007–2008 against 2019–2020 and optimizing fluxes across 35 source regions, the inversion offered a quantitative account of the decade-scale ethane trend. I presented this work at the AGU Fall Meeting in 2021 and 2022."
+  },
+  {
+    "objectID": "projects/ethane-budget-inversion.html#why-it-matters",
+    "href": "projects/ethane-budget-inversion.html#why-it-matters",
+    "title": "Reconciling the Global Ethane Budget",
+    "section": "Why it matters",
+    "text": "Why it matters\nEthane and methane are co-emitted by fossil-fuel activity, so getting the ethane budget right sharpens our understanding of where hydrocarbon emissions truly originate — the foundation of any credible mitigation policy. This was also where I learned that good environmental science lives or dies on rigor: a beautiful result from an unstable inversion is worthless, and the discipline of doing the linear algebra correctly is the science."
+  },
+  {
+    "objectID": "projects/ethane-budget-inversion.html#documents",
+    "href": "projects/ethane-budget-inversion.html#documents",
+    "title": "Reconciling the Global Ethane Budget",
+    "section": "Documents",
+    "text": "Documents\n\nREU Research Manuscript (2021) — my first-author manuscript establishing the model-versus-observation ethane gap that motivated the inversion.\nResearch Symposium Presentation — the presentation of this work delivered at the CCAR/PSU research symposium."
+  },
+  {
+    "objectID": "projects/ai-datacenter-energy.html",
+    "href": "projects/ai-datacenter-energy.html",
+    "title": "AI & Data-Center Energy Demand",
+    "section": "",
+    "text": "As AI workloads exploded, utilities and policymakers faced an urgent, poorly-quantified question: how much electricity will AI and data centers actually demand, and what does that mean for a grid that plans in decades? Speculation was plentiful. Defensible numbers were scarce."
+  },
+  {
+    "objectID": "projects/ai-datacenter-energy.html#the-question",
+    "href": "projects/ai-datacenter-energy.html#the-question",
+    "title": "AI & Data-Center Energy Demand",
+    "section": "",
+    "text": "As AI workloads exploded, utilities and policymakers faced an urgent, poorly-quantified question: how much electricity will AI and data centers actually demand, and what does that mean for a grid that plans in decades? Speculation was plentiful. Defensible numbers were scarce."
+  },
+  {
+    "objectID": "projects/ai-datacenter-energy.html#powering-intelligence",
+    "href": "projects/ai-datacenter-energy.html#powering-intelligence",
+    "title": "AI & Data-Center Energy Demand",
+    "section": "Powering Intelligence",
+    "text": "Powering Intelligence\nI co-authored Powering Intelligence: Analyzing Artificial Intelligence and Data Center Energy Consumption (EPRI, 2024), which became one of the most widely-referenced analyses on the subject. It projected U.S. data-center load growth from a 2023 baseline of roughly 152 TWh/year — about 4% of national electricity — across four scenarios through 2030:\n\nA low-growth path reaching about 4.6% of U.S. electricity\nA moderate path near 5.0%\nA high-growth path around 6.8%\nAn aggressive path as high as 9.1%\n\nThe analysis put concrete bounds on AI’s energy intensity — a single ChatGPT request consumes roughly ten times the electricity of a Google search (about 2.9 Wh versus 0.3 Wh) — and mapped its striking geographic concentration, with 15 states accounting for roughly 80% of U.S. data-center load and Virginia alone drawing about a quarter of its state electricity. It also flagged the end of an era: average data-center efficiency (PUE) had improved steadily for over a decade but is now plateauing just as AI load accelerates.\nCrucially, the report didn’t just sound an alarm. It laid out strategies for utilities to absorb the growth: efficiency and load flexibility, tighter developer–utility coordination, and better five-to-ten-year grid-planning tools."
+  },
+  {
+    "objectID": "projects/ai-datacenter-energy.html#data-center-heat-reuse",
+    "href": "projects/ai-datacenter-energy.html#data-center-heat-reuse",
+    "title": "AI & Data-Center Energy Demand",
+    "section": "Data Center Heat Reuse",
+    "text": "Data Center Heat Reuse\nI also contributed to a companion Quick Insight on data-center heat reuse, which examined cooling — 30–40% of a data center’s energy use — as a recovery opportunity rather than pure waste. It highlighted real deployments, including a project in Helsinki that channels data-center waste heat to warm hundreds of thousands of residents while avoiding substantial annual CO₂ emissions, and tracked emerging regulation mandating heat reuse."
+  },
+  {
+    "objectID": "projects/ai-datacenter-energy.html#why-it-matters",
+    "href": "projects/ai-datacenter-energy.html#why-it-matters",
+    "title": "AI & Data-Center Energy Demand",
+    "section": "Why it matters",
+    "text": "Why it matters\nGrid planning runs on years-long lead times, so the cost of guessing wrong about AI’s demand is measured in blackouts or stranded investment. Giving planners credible, bounded projections — rather than hype — directly shapes whether the grid can absorb AI’s growth without compromising reliability or climate goals."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "J.Y. Al-Jbour",
+    "title": "Jordan Y. Aljbour",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "A computational and data scientist working at the intersection of climate science, energy systems, and high-performance computing — turning complex physical datasets into reproducible, decision-grade tools.\nView Research See Projects GitHub"
+  },
+  {
+    "objectID": "index.html#at-a-glance",
+    "href": "index.html#at-a-glance",
+    "title": "Jordan Y. Aljbour",
+    "section": "At a glance",
+    "text": "At a glance\n\n\n40%+\nRuntime & memory cut on distributed HPC pipelines running 10k+ Monte Carlo samples per scenario\n\n\n69\nEnergy technologies scored in EPRI’s Technology Radar methodology\n\n\n10+\nPeer & industry publications across energy and climate science\n\n\n6\nProfessional certifications earned or in progress (AEE, IBM, Google, WRI)"
+  },
+  {
+    "objectID": "index.html#what-i-do",
+    "href": "index.html#what-i-do",
+    "title": "Jordan Y. Aljbour",
+    "section": "What I do",
+    "text": "What I do\nI build the computational machinery behind environmental and energy decisions, because I believe the people making those decisions deserve the clearest possible picture of what’s at stake. That conviction shapes how I work. I write end-to-end, reproducible scientific software: distributed data pipelines, statistical and risk models, and analysis-ready geospatial tooling, engineered to scale from a laptop to HPC and cloud clusters without ever cutting corners on rigor or reproducibility.\nThe questions I take on are the ones where the science has real consequences for the planet. How much will a warming climate cost our aging energy infrastructure? What will AI and data centers truly demand from the grid? How are global methane and ethane emissions actually trending, and where can we intervene? I turn messy physical data into honest tools that answer those questions with quantified uncertainty, because good stewardship starts with telling the truth about the numbers.\nMost recently, as a Senior Python Developer in parallel computing at ICF, I converted experimental climate workflows into modular, tested, containerized Python packages. I engineered Dask pipelines for out-of-core processing and standardized ARCO-compliant geospatial formats (Zarr, NetCDF) on AWS S3, cutting runtime and memory by 40%+ in the process."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Jordan Y. Aljbour",
     "section": "",
-    "text": "About this site"
+    "text": "I’m a multidisciplinary computational scientist based in Portland, Oregon, working where climate physics, energy systems, and software engineering meet. I came to this work as an environmentalist first, convinced that we have a real responsibility to be the best stewards of this planet we can be, and I’ve spent my career making sure that conviction is backed by rigorous data rather than good intentions alone. I specialize in large-scale environmental and energy data: the kind that’s too big for memory, too messy for spreadsheets, and far too consequential to get wrong.\nMost recently, as a Senior Python Developer in parallel computing at ICF, I refactored experimental climate workflows into production-grade, Dask-optimized packages running across HPC and cloud clusters, and standardized analysis-ready geospatial data (Zarr/NetCDF on AWS S3). That work underpinned climate-risk tooling for the physical energy infrastructure our communities depend on, from transformers to coastal substations.\nEarlier, at the Electric Power Research Institute, I designed the statistical methodology and backend behind EPRI’s Technology Radar, a confidence-weighted foresight platform spanning roughly 69 energy technologies, and authored widely-referenced analyses of AI and data-center energy demand. My scientific foundation comes from Portland State’s Center for Climate and Aerosol Research, where I ran global atmospheric-chemistry simulations (GEOS-Chem) and analytical Bayesian emission inversions to investigate the methane and ethane trends driving a changing atmosphere.\nMy approach blends technical rigor with clear communication, and it’s rooted in a simple belief: the better we understand our impact on the planet, the better we can choose to protect it. I care as much about reproducibility, documentation, and helping teams move together as I do about the models themselves, because work this important shouldn’t live or die with one person."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Jordan Y. Aljbour",
+    "section": "Education",
+    "text": "Education\nB.S., Applied Environmental Physics (Honors) — Portland State University Dual minors in Geographic Information Systems & Mathematics"
+  },
+  {
+    "objectID": "about.html#certifications",
+    "href": "about.html#certifications",
+    "title": "Jordan Y. Aljbour",
+    "section": "Certifications",
+    "text": "Certifications\n\nCertified Energy Manager (CEM) — Association of Energy Engineers (in progress, 2026)\nCertified Sustainable Development Professional (CSDP) — Association of Energy Engineers (in progress, 2026)\nIBM Data Science Professional Certificate — IBM (2025)\nGoogle Advanced Data Analytics Professional Certificate — Google (2024)\nGHG Protocol Scope 2 & 3 Certificates — World Resources Institute (2023)\nGHG Accounting Certificate — Corporate Finance Institute (2023)"
+  },
+  {
+    "objectID": "about.html#technical-skills",
+    "href": "about.html#technical-skills",
+    "title": "Jordan Y. Aljbour",
+    "section": "Technical Skills",
+    "text": "Technical Skills\n\nLanguages & Core Tools\n\nPython SQL R MATLAB C/C++ FORTRAN Scala JavaScript VBA Bash\n\nHigh-Performance & Cloud\n\nDask AWS / S3 Coiled Azure Snowflake Docker SSH / Unix Distributed Computing\n\nGeospatial & Climate\n\nArcGIS Pro QGIS xESMF Regridding Zarr / NetCDF ARCO Standards GEOS-Chem GCHP HEMCO WRF AERMOD ENVI\n\nStatistical & Scientific Modeling\n\nMonte Carlo Bayesian Inference Uncertainty Quantification Time-Series Forecasting Extreme-Value Statistics\n\nInstrumentation & Hardware\n\nSystem Design & Fabrication Experimental Instrumentation Optical Measurement LTspice Simulation Precision Calibration System Diagnostics AutoCAD\n\nData Engineering & Visualization\n\nPipeline Design Ingestion & Cleaning Tableau Power BI matplotlib seaborn hvplot Quarto\n\nPractices\n\nGit / Jira CI/CD Unit Testing Containerization API Design QA/QC Reproducible Research"
+  },
+  {
+    "objectID": "about.html#selected-recognition",
+    "href": "about.html#selected-recognition",
+    "title": "Jordan Y. Aljbour",
+    "section": "Selected Recognition",
+    "text": "Selected Recognition\n\nNASA Pathways Intern (2021–2024)\nNSF Division of Atmospheric & Geospace Sciences, Grant 1950702 (2021–2023)\nPSU Honors College Thesis & Academic Achievement Awards\nPresident’s Equal Access Scholarship · Vernier STEM Scholarship"
+  },
+  {
+    "objectID": "methane-thesis.html",
+    "href": "methane-thesis.html",
+    "title": "Honors Thesis: Methane Capture from Compostables",
+    "section": "",
+    "text": "Landfilled compostable waste emits methane, a greenhouse gas far more potent than CO₂ over the short term. That same methane, captured, is renewable energy. The question was whether a practical digester design could make capture more efficient."
+  },
+  {
+    "objectID": "methane-thesis.html#the-problem",
+    "href": "methane-thesis.html#the-problem",
+    "title": "Honors Thesis: Methane Capture from Compostables",
+    "section": "",
+    "text": "Landfilled compostable waste emits methane, a greenhouse gas far more potent than CO₂ over the short term. That same methane, captured, is renewable energy. The question was whether a practical digester design could make capture more efficient."
+  },
+  {
+    "objectID": "methane-thesis.html#what-i-built",
+    "href": "methane-thesis.html#what-i-built",
+    "title": "Honors Thesis: Methane Capture from Compostables",
+    "section": "What I built",
+    "text": "What I built\nFor my award-winning Honors thesis, I designed and built a novel anaerobic biogas digester featuring a dual-motor agitation system and multi-stage gas scrubbing.\n\nDemonstrated approximately 88–94% CH₄ purity in captured biogas.\nAchieved a roughly 35% biogas-yield improvement attributable to agitation.\nEstimated statewide potential of ~30.3 million MWh of renewable natural gas and ~81,766 tons of avoided CH₄ emissions.\n\nThis earned the PSU Honors College Thesis Achievement Award."
+  },
+  {
+    "objectID": "methane-thesis.html#why-it-matters",
+    "href": "methane-thesis.html#why-it-matters",
+    "title": "Honors Thesis: Methane Capture from Compostables",
+    "section": "Why it matters",
+    "text": "Why it matters\nIt’s a concrete example of the stewardship principle that drives my work: turning a pollution problem into an energy solution, backed by measured results rather than good intentions."
+  },
+  {
+    "objectID": "projects/climate-risk-engineering.html",
+    "href": "projects/climate-risk-engineering.html",
+    "title": "ClimateSight: Climate Risk Engineering for Grid Infrastructure",
+    "section": "",
+    "text": "Electric utilities own physical assets — poles, powerlines, transformers, substations — that fail or degrade faster under climate stress. The planner’s real question, how much will a warming climate cost this fleet, and where is the risk concentrated?, can’t be answered by a single model. It needs a trustworthy chain: from raw climate projections, through analysis-ready data, through physics-based impact models, to defensible cost distributions a decision-maker can act on.\nAt ICF, I designed and built the core of ClimateSight, a platform that delivers exactly that chain. The system ingests climate-model output, regrids and standardizes it to cloud-native datasets, runs per-asset impact models, and produces Monte Carlo cost distributions and loss-exceedance curves."
+  },
+  {
+    "objectID": "projects/climate-risk-engineering.html#the-problem",
+    "href": "projects/climate-risk-engineering.html#the-problem",
+    "title": "ClimateSight: Climate Risk Engineering for Grid Infrastructure",
+    "section": "",
+    "text": "Electric utilities own physical assets — poles, powerlines, transformers, substations — that fail or degrade faster under climate stress. The planner’s real question, how much will a warming climate cost this fleet, and where is the risk concentrated?, can’t be answered by a single model. It needs a trustworthy chain: from raw climate projections, through analysis-ready data, through physics-based impact models, to defensible cost distributions a decision-maker can act on.\nAt ICF, I designed and built the core of ClimateSight, a platform that delivers exactly that chain. The system ingests climate-model output, regrids and standardizes it to cloud-native datasets, runs per-asset impact models, and produces Monte Carlo cost distributions and loss-exceedance curves."
+  },
+  {
+    "objectID": "projects/climate-risk-engineering.html#the-climate-data-pipeline",
+    "href": "projects/climate-risk-engineering.html#the-climate-data-pipeline",
+    "title": "ClimateSight: Climate Risk Engineering for Grid Infrastructure",
+    "section": "The climate data pipeline",
+    "text": "The climate data pipeline\nThe foundation is a 7-stage, separation-of-concerns pipeline that turns raw climate output into analysis-ready Zarr cubes on S3:\n\nSchema & time policy — CF-compliance and a UTC-only time standard that eliminates daylight-saving duplicate-timestamp ambiguities at the source.\nLazy, S3-backed ingestion of CONUS404 and ERA5 via Intake/HyTest catalogs.\nRegridding from native projection to WGS84 via xESMF, with regrid-weight caching that delivers roughly 4× faster rebuilds.\nDerived-variable transforms, per-variable Zarr cube construction, and Dask cluster management on Coiled AWS profiles.\nMetadata consolidation that cut S3 GET requests from 100+ to 1–2, bringing dataset open times from ~30 seconds to under 1 second.\n\nAcross refactoring the experimental codebase into modular, tested, containerized packages and this performance engineering, I cut runtime and peak memory use by 40%+."
+  },
+  {
+    "objectID": "projects/climate-risk-engineering.html#asset-impact-models",
+    "href": "projects/climate-risk-engineering.html#asset-impact-models",
+    "title": "ClimateSight: Climate Risk Engineering for Grid Infrastructure",
+    "section": "Asset-impact models",
+    "text": "Asset-impact models\nOn top of the data layer sit physics-based impact models for four asset classes:\n\nPoles — lognormal wind fragility curves integrated against the wind distribution, with age-dependent strength decay.\nPowerlines — thermal ampacity derating coupling temperature, wind, and solar load (IEEE-738-aligned).\nSubstations — flood vulnerability via Gumbel/GEV extreme-value fitting to return-period levels.\nTransformers — IEEE C57.91 / Arrhenius-based insulation-aging (hotspot temperature to aging-acceleration to lifespan loss). Transformer modeling was a collaborative effort with a colleague."
+  },
+  {
+    "objectID": "projects/climate-risk-engineering.html#the-consequence-engine",
+    "href": "projects/climate-risk-engineering.html#the-consequence-engine",
+    "title": "ClimateSight: Climate Risk Engineering for Grid Infrastructure",
+    "section": "The consequence engine",
+    "text": "The consequence engine\nA Monte Carlo cost simulation combines Bernoulli failure masking with cost draws (lognormal, CV-parameterized) to produce loss-exceedance curves — with Dask-safe monotonicity enforcement — plus Value-at-Risk, tail-VaR, and expected-annual-loss, reported with ensemble uncertainty bands across climate models and scenarios."
+  },
+  {
+    "objectID": "projects/climate-risk-engineering.html#hazard-standardization-synchronized-risk-deltas",
+    "href": "projects/climate-risk-engineering.html#hazard-standardization-synchronized-risk-deltas",
+    "title": "ClimateSight: Climate Risk Engineering for Grid Infrastructure",
+    "section": "Hazard standardization & synchronized risk deltas",
+    "text": "Hazard standardization & synchronized risk deltas\nA distinguishing piece of the work was a configuration-driven pipeline that standardizes raw CoSMoS coastal-flood data — reprojecting from UTM to geographic coordinates into paired historic and future Zarr cubes — and a synchronized Monte Carlo sampler that applies identical random draws to both climate scenarios. This isolates the true climate signal from sampling noise, so a computed risk delta reflects climate change rather than randomness. It was a methodological requirement from the science lead, and it’s the kind of detail that separates a result you can defend from one you can’t. An automated paired-dataset validation framework checks dimensional and coordinate synchronization before any risk math runs.\nThe system’s formal climate and flood data contracts, and the overall architecture, were developed collaboratively with the ICF team."
+  },
+  {
+    "objectID": "projects/climate-risk-engineering.html#why-it-matters",
+    "href": "projects/climate-risk-engineering.html#why-it-matters",
+    "title": "ClimateSight: Climate Risk Engineering for Grid Infrastructure",
+    "section": "Why it matters",
+    "text": "Why it matters\nClimate adaptation budgets are finite. By engineering the full path from raw projection to quantified, uncertainty-aware risk — and refusing to hide that uncertainty — this work helps utilities direct hardening investment where it protects the most people per dollar."
+  },
+  {
+    "objectID": "projects/methane-thesis.html",
+    "href": "projects/methane-thesis.html",
+    "title": "Anaerobic Biogas Digester: From Bench Build to Statewide Model",
+    "section": "",
+    "text": "Methane is a high-leverage near-term climate target: tens of times more potent than CO₂ over its roughly twelve-year atmospheric lifetime. A large, overlooked source is compostable waste rotting in landfills. But that same methane, captured instead of vented, is renewable energy. My Honors thesis at Portland State asked a practical, three-part question: how much methane does Oregon’s landfilled compostable waste actually produce, how well can anaerobic digestion mitigate it, and could a digester affordable enough for a household backyard make a real dent?"
+  },
+  {
+    "objectID": "projects/methane-thesis.html#the-idea",
+    "href": "projects/methane-thesis.html#the-idea",
+    "title": "Anaerobic Biogas Digester: From Bench Build to Statewide Model",
+    "section": "",
+    "text": "Methane is a high-leverage near-term climate target: tens of times more potent than CO₂ over its roughly twelve-year atmospheric lifetime. A large, overlooked source is compostable waste rotting in landfills. But that same methane, captured instead of vented, is renewable energy. My Honors thesis at Portland State asked a practical, three-part question: how much methane does Oregon’s landfilled compostable waste actually produce, how well can anaerobic digestion mitigate it, and could a digester affordable enough for a household backyard make a real dent?"
+  },
+  {
+    "objectID": "projects/methane-thesis.html#the-built-artifact",
+    "href": "projects/methane-thesis.html#the-built-artifact",
+    "title": "Anaerobic Biogas Digester: From Bench Build to Statewide Model",
+    "section": "The built artifact",
+    "text": "The built artifact\nRather than only model the idea, I designed, built, and instrumented a working digester from accessible materials — HMWPE 55-gallon drums and PVC — for roughly $800, about half the cost of a comparable commercial unit. It integrated six subsystems, documented across six AutoCAD schematics, including:\n\nA central digestion tank with separated bioslurry and biogas headspace.\nA water-displacement methane collection tank with an autonomous over-pressure relief design.\nA dual-motor agitation system on a programmed timer — the novel element, which raised measured biogas yield by roughly 35% over passive digestion.\nA multi-stage chemical scrubbing train (sequential H₂S, CO₂, and water removal) that achieved 88–94% methane purity.\nCompression and storage for appliance use, plus a fire-safety analysis for its real backyard installation."
+  },
+  {
+    "objectID": "projects/methane-thesis.html#what-the-pilot-showed",
+    "href": "projects/methane-thesis.html#what-the-pilot-showed",
+    "title": "Anaerobic Biogas Digester: From Bench Build to Statewide Model",
+    "section": "What the pilot showed",
+    "text": "What the pilot showed\nOver a 90-day pilot run, I tracked feedstock mass, slurry pH, temperature, pressure, and power draw weekly, deriving captured biogas mass via the ideal gas law. The run processed about 102 kg of household compostable waste and sequestered methane convertible to usable thermal, electrical, and mechanical energy. It also taught a real lesson in physical constraints: production stayed sluggish until an unusually cold Oregon spring finally warmed past about 60 °F, a reminder that bench results live at the mercy of the environment."
+  },
+  {
+    "objectID": "projects/methane-thesis.html#scaling-the-question-with-gis",
+    "href": "projects/methane-thesis.html#scaling-the-question-with-gis",
+    "title": "Anaerobic Biogas Digester: From Bench Build to Statewide Model",
+    "section": "Scaling the question with GIS",
+    "text": "Scaling the question with GIS\nA working backyard unit is a proof of concept; the interesting question is what happens at scale. I built a waste-to-methane-to-renewable-gas model across three demographic scales — statewide, Oregon’s ten largest cities, and nine federally recognized tribes — using EPA generation rates, Oregon DEQ waste data, and climate-adjusted emission factors. I classified communities by NLCD land cover and Köppen-Geiger climate, applying climate-specific methane factors and producing thematic maps and zonal statistics.\nThe model suggested that broad adoption could divert on the order of 967,000 tons of waste annually, generate roughly 30 million MWh of renewable natural gas, and curtail around 82,000 tons of methane per year — enough to meaningfully shift Oregon’s renewable energy share. The GIS analysis also surfaced a stark equity gap: urban communities recovered only about 4% of their compostables against roughly 72% for rural ones."
+  },
+  {
+    "objectID": "projects/methane-thesis.html#why-it-matters",
+    "href": "projects/methane-thesis.html#why-it-matters",
+    "title": "Anaerobic Biogas Digester: From Bench Build to Statewide Model",
+    "section": "Why it matters",
+    "text": "Why it matters\nThis is the project that crystallized why I do this work. It runs the whole arc I care about — designing hardware, measuring honestly, modeling impact, and mapping who’s left out — in service of turning a pollution problem into an energy solution. It earned recognition from PSU’s Honors College, but more than that, it’s the clearest statement of the stewardship that drives everything else on this site."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "A selection of work spanning climate-risk engineering, energy-technology foresight, atmospheric modeling, and geospatial analysis. Each project pairs rigorous computation with a real decision it was built to inform.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\nAI & Data-Center Energy Demand\n\n\n\nEnergy Analytics\n\nAI\n\nPublication\n\nEPRI\n\n\n\nCo-author of EPRI’s widely-referenced analysis projecting U.S. data-center electricity demand through 2030 — quantifying how AI could push data centers from ~4% toward 9% of…\n\n\n\n\n\n\n\n\n\nClimateSight: Climate Risk Engineering for Grid Infrastructure\n\n\n\nClimate Risk\n\nHPC\n\nDask\n\nMonte Carlo\n\nICF\n\n\n\nThe core of a cloud-native climate-risk platform at ICF that quantifies financial risk to electric-utility assets — a 7-stage climate data pipeline, physics-based…\n\n\n\n\n\n\n\n\n\nReconciling the Global Ethane Budget\n\n\n\nAtmospheric Science\n\nGEOS-Chem\n\nBayesian Inversion\n\nPSU CCAR\n\n\n\nFirst-authored, NSF-funded atmospheric research using global GEOS-Chem simulations and an analytical Bayesian inversion to explain why standard inventories underestimate…\n\n\n\n\n\n\n\n\n\nAnaerobic Biogas Digester: From Bench Build to Statewide Model\n\n\n\nRenewable Energy\n\nHardware\n\nGIS\n\nPSU Honors Thesis\n\n\n\nMy sole-authored Honors thesis: I designed, built, and instrumented a novel domestic-scale anaerobic biogas digester to capture methane from household compostables, then…\n\n\n\n\n\n\n\n\n\nEPRI Technology Radar: Methodology & Platform\n\n\n\nTechnology Foresight\n\nStatistics\n\nPython\n\nEPRI\n\n\n\nI designed and architected the statistical methodology and software backbone behind EPRI’s flagship technology-foresight platform — a confidence-weighted system that turns…\n\n\n\n\n\nNo matching items"
   }
 ]

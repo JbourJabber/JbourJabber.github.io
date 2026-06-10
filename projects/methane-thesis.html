@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2022-06-01">
+<meta name="description" content="My sole-authored Honors thesis: I designed, built, and instrumented a novel domestic-scale anaerobic biogas digester to capture methane from household compostables, then built a GIS-backed model of what statewide adoption could mean for Oregon’s renewable energy and emissions.">
 
-<title>Jordan Y. Aljbour</title>
+<title>Anaerobic Biogas Digester: From Bench Build to Statewide Model – Jordan Y. Aljbour</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,23 +28,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-917e33fef9f22345ae8a730791d0194a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6c609c7b5fd12dc00130499bf3044bd0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-917e33fef9f22345ae8a730791d0194a.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6c609c7b5fd12dc00130499bf3044bd0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Inter:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -85,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Jordan Y. Aljbour</span>
     </a>
   </div>
@@ -96,19 +98,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../research.html"> 
 <span class="menu-text">Research &amp; Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -119,50 +121,88 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-idea" id="toc-the-idea" class="nav-link active" data-scroll-target="#the-idea">The idea</a></li>
+  <li><a href="#the-built-artifact" id="toc-the-built-artifact" class="nav-link" data-scroll-target="#the-built-artifact">The built artifact</a></li>
+  <li><a href="#what-the-pilot-showed" id="toc-what-the-pilot-showed" class="nav-link" data-scroll-target="#what-the-pilot-showed">What the pilot showed</a></li>
+  <li><a href="#scaling-the-question-with-gis" id="toc-scaling-the-question-with-gis" class="nav-link" data-scroll-target="#scaling-the-question-with-gis">Scaling the question with GIS</a></li>
+  <li><a href="#why-it-matters" id="toc-why-it-matters" class="nav-link" data-scroll-target="#why-it-matters">Why it matters</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Anaerobic Biogas Digester: From Bench Build to Statewide Model</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Renewable Energy</div>
+    <div class="quarto-category">Hardware</div>
+    <div class="quarto-category">GIS</div>
+    <div class="quarto-category">PSU Honors Thesis</div>
+  </div>
+  </div>
 
-
-
-<section id="jordan-y.-aljbour" class="level1 hero-title hero-banner">
-<h1 class="hero-title">Jordan Y. Aljbour</h1>
-<section id="climate-energy-researcher-computational-scientist-python-developer" class="level3 hero-subtitle">
-<h3 class="hero-subtitle anchored" data-anchor-id="climate-energy-researcher-computational-scientist-python-developer">Climate &amp; Energy Researcher · Computational Scientist · Python Developer</h3>
-<p>A computational and data scientist working at the intersection of climate science, energy systems, and high-performance computing — turning complex physical datasets into reproducible, decision-grade tools.</p>
-<p><a href="./research.html" class="btn btn-accent" role="button">View Research</a> <a href="./projects.html" class="btn btn-accent-outline" role="button">See Projects</a> <a href="https://github.com/JbourJabber" class="btn btn-accent-outline" role="button">GitHub</a></p>
-</section>
-</section>
-<section id="at-a-glance" class="level2">
-<h2 class="anchored" data-anchor-id="at-a-glance">At a glance</h2>
-<div class="grid">
-<section id="section" class="level3 g-col-12 g-col-md-3 stat-card">
-<h3 class="anchored" data-anchor-id="section">40%+</h3>
-<p>Runtime &amp; memory cut on distributed HPC pipelines running 10k+ Monte Carlo samples per scenario</p>
-</section>
-<section id="section-1" class="level3 g-col-12 g-col-md-3 stat-card">
-<h3 class="anchored" data-anchor-id="section-1">69</h3>
-<p>Energy technologies scored in <a href="https://epritechradar.epri.com/?pg=home">EPRI’s Technology Radar</a> methodology</p>
-</section>
-<section id="section-2" class="level3 g-col-12 g-col-md-3 stat-card">
-<h3 class="anchored" data-anchor-id="section-2">10+</h3>
-<p>Peer &amp; industry publications across energy and climate science</p>
-</section>
-<section id="section-3" class="level3 g-col-12 g-col-md-3 stat-card">
-<h3 class="anchored" data-anchor-id="section-3">6</h3>
-<p>Professional certifications earned or in progress (AEE, IBM, Google, WRI)</p>
-</section>
+<div>
+  <div class="description">
+    My sole-authored Honors thesis: I designed, built, and instrumented a novel domestic-scale anaerobic biogas digester to capture methane from household compostables, then built a GIS-backed model of what statewide adoption could mean for Oregon’s renewable energy and emissions.
+  </div>
 </div>
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 1, 2022</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-idea" class="level2">
+<h2 class="anchored" data-anchor-id="the-idea">The idea</h2>
+<p>Methane is a high-leverage near-term climate target: tens of times more potent than CO₂ over its roughly twelve-year atmospheric lifetime. A large, overlooked source is compostable waste rotting in landfills. But that same methane, captured instead of vented, is renewable energy. My Honors thesis at Portland State asked a practical, three-part question: how much methane does Oregon’s landfilled compostable waste actually produce, how well can anaerobic digestion mitigate it, and could a digester affordable enough for a household backyard make a real dent?</p>
 </section>
-<section id="what-i-do" class="level2">
-<h2 class="anchored" data-anchor-id="what-i-do">What I do</h2>
-<p>I build the computational machinery behind environmental and energy decisions, because I believe the people making those decisions deserve the clearest possible picture of what’s at stake. That conviction shapes how I work. I write end-to-end, reproducible scientific software: distributed data pipelines, statistical and risk models, and analysis-ready geospatial tooling, engineered to scale from a laptop to HPC and cloud clusters without ever cutting corners on rigor or reproducibility.</p>
-<p>The questions I take on are the ones where the science has real consequences for the planet. <em>How much will a warming climate cost our aging energy infrastructure? What will AI and data centers truly demand from the grid? How are global methane and ethane emissions actually trending, and where can we intervene?</em> I turn messy physical data into honest tools that answer those questions with quantified uncertainty, because good stewardship starts with telling the truth about the numbers.</p>
-<p>Most recently, as a Senior Python Developer in parallel computing at ICF, I converted experimental climate workflows into modular, tested, containerized Python packages. I engineered Dask pipelines for out-of-core processing and standardized ARCO-compliant geospatial formats (Zarr, NetCDF) on AWS S3, cutting runtime and memory by 40%+ in the process.</p>
+<section id="the-built-artifact" class="level2">
+<h2 class="anchored" data-anchor-id="the-built-artifact">The built artifact</h2>
+<p>Rather than only model the idea, I designed, built, and instrumented a working digester from accessible materials — HMWPE 55-gallon drums and PVC — for roughly $800, about half the cost of a comparable commercial unit. It integrated six subsystems, documented across six AutoCAD schematics, including:</p>
+<ul>
+<li>A central digestion tank with separated bioslurry and biogas headspace.</li>
+<li>A water-displacement methane collection tank with an autonomous over-pressure relief design.</li>
+<li>A <strong>dual-motor agitation system</strong> on a programmed timer — the novel element, which raised measured biogas yield by roughly 35% over passive digestion.</li>
+<li>A <strong>multi-stage chemical scrubbing train</strong> (sequential H₂S, CO₂, and water removal) that achieved 88–94% methane purity.</li>
+<li>Compression and storage for appliance use, plus a fire-safety analysis for its real backyard installation.</li>
+</ul>
+</section>
+<section id="what-the-pilot-showed" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-pilot-showed">What the pilot showed</h2>
+<p>Over a 90-day pilot run, I tracked feedstock mass, slurry pH, temperature, pressure, and power draw weekly, deriving captured biogas mass via the ideal gas law. The run processed about 102 kg of household compostable waste and sequestered methane convertible to usable thermal, electrical, and mechanical energy. It also taught a real lesson in physical constraints: production stayed sluggish until an unusually cold Oregon spring finally warmed past about 60 °F, a reminder that bench results live at the mercy of the environment.</p>
+</section>
+<section id="scaling-the-question-with-gis" class="level2">
+<h2 class="anchored" data-anchor-id="scaling-the-question-with-gis">Scaling the question with GIS</h2>
+<p>A working backyard unit is a proof of concept; the interesting question is what happens at scale. I built a waste-to-methane-to-renewable-gas model across three demographic scales — statewide, Oregon’s ten largest cities, and nine federally recognized tribes — using EPA generation rates, Oregon DEQ waste data, and climate-adjusted emission factors. I classified communities by NLCD land cover and Köppen-Geiger climate, applying climate-specific methane factors and producing thematic maps and zonal statistics.</p>
+<p>The model suggested that broad adoption could divert on the order of 967,000 tons of waste annually, generate roughly 30 million MWh of renewable natural gas, and curtail around 82,000 tons of methane per year — enough to meaningfully shift Oregon’s renewable energy share. The GIS analysis also surfaced a stark equity gap: urban communities recovered only about 4% of their compostables against roughly 72% for rural ones.</p>
+</section>
+<section id="why-it-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-it-matters">Why it matters</h2>
+<p>This is the project that crystallized why I do this work. It runs the whole arc I care about — designing hardware, measuring honestly, modeling impact, and mapping who’s left out — in service of turning a pollution problem into an energy solution. It earned recognition from PSU’s Honors College, but more than that, it’s the clearest statement of the stewardship that drives everything else on this site.</p>
 
 
 </section>
