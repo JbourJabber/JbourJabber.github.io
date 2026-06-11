@@ -1,6 +1,6 @@
 ---
 title: ""
-pagetitle: "Jordan Y. Aljbour"
+pagetitle: "Jordan Y. Aljbour - Computational Scientist"
 page-layout: full
 toc: false
 ---

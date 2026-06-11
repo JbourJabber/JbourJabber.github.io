@@ -4,13 +4,12 @@ project:
   resources: 
     - files/
     - CNAME
-
 website:
   title: ""
   favicon: favicon.svg
   site-url: https://jyaljbour.com
   description: "Computational and data scientist working across climate science, energy systems, and high-performance computing."
-open-graph:
+  open-graph:
     title: "Jordan Y. Aljbour"
     description: "Computational and data scientist working across climate science, energy systems, and high-performance computing."
     image: images/share-card.jpg
@@ -35,7 +34,6 @@ open-graph:
         href: files/jordan-aljbour-cv.pdf
         target: _blank
         rel: noopener
-
 format:
   html:
     theme: [darkly, theme-dark.scss]
