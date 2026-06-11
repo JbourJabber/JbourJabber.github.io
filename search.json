@@ -147,27 +147,6 @@
     "text": "Why it matters\nGrid planning runs on years-long lead times, so the cost of guessing wrong about AI’s demand is measured in blackouts or stranded investment. Giving planners credible, bounded projections — rather than hype — directly shapes whether the grid can absorb AI’s growth without compromising reliability or climate goals."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Jordan Y. Aljbour",
-    "section": "",
-    "text": "A computational and data scientist working at the intersection of climate science, energy systems, and high-performance computing — turning complex physical datasets into reproducible, decision-grade tools.\nView Research See Projects GitHub"
-  },
-  {
-    "objectID": "index.html#at-a-glance",
-    "href": "index.html#at-a-glance",
-    "title": "Jordan Y. Aljbour",
-    "section": "At a glance",
-    "text": "At a glance\n\n\n40%+\nRuntime & memory cut on distributed HPC pipelines running 10k+ Monte Carlo samples per scenario\n\n\n69\nEnergy technologies scored in EPRI’s Technology Radar methodology\n\n\n10+\nPeer & industry publications across energy and climate science\n\n\n6\nProfessional certifications earned or in progress (AEE, IBM, Google, WRI)"
-  },
-  {
-    "objectID": "index.html#what-i-do",
-    "href": "index.html#what-i-do",
-    "title": "Jordan Y. Aljbour",
-    "section": "What I do",
-    "text": "What I do\nI build the computational machinery behind environmental and energy decisions, because I believe the people making those decisions deserve the clearest possible picture of what’s at stake. That conviction shapes how I work. I write end-to-end, reproducible scientific software: distributed data pipelines, statistical and risk models, and analysis-ready geospatial tooling, engineered to scale from a laptop to HPC and cloud clusters without ever cutting corners on rigor or reproducibility.\nThe questions I take on are the ones where the science has real consequences for the planet. How much will a warming climate cost our aging energy infrastructure? What will AI and data centers truly demand from the grid? How are global methane and ethane emissions actually trending, and where can we intervene? I turn messy physical data into honest tools that answer those questions with quantified uncertainty, because good stewardship starts with telling the truth about the numbers.\nMost recently, as a Senior Python Developer in parallel computing at ICF, I converted experimental climate workflows into modular, tested, containerized Python packages. I engineered Dask pipelines for out-of-core processing and standardized ARCO-compliant geospatial formats (Zarr, NetCDF) on AWS S3, cutting runtime and memory by 40%+ in the process."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Jordan Y. Aljbour",
@@ -203,32 +182,25 @@
     "text": "Selected Recognition\n\nNASA Pathways Intern (2021–2024)\nNSF Division of Atmospheric & Geospace Sciences, Grant 1950702 (2021–2023)\nPSU Honors College Thesis & Academic Achievement Awards\nPresident’s Equal Access Scholarship · Vernier STEM Scholarship"
   },
   {
-    "objectID": "methane-thesis.html",
-    "href": "methane-thesis.html",
-    "title": "Honors Thesis: Methane Capture from Compostables",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jordan Y. Aljbour",
     "section": "",
-    "text": "Landfilled compostable waste emits methane, a greenhouse gas far more potent than CO₂ over the short term. That same methane, captured, is renewable energy. The question was whether a practical digester design could make capture more efficient."
+    "text": "A computational and data scientist working at the intersection of climate science, energy systems, and high-performance computing — turning complex physical datasets into reproducible, decision-grade tools.\nView Research See Projects GitHub"
   },
   {
-    "objectID": "methane-thesis.html#the-problem",
-    "href": "methane-thesis.html#the-problem",
-    "title": "Honors Thesis: Methane Capture from Compostables",
-    "section": "",
-    "text": "Landfilled compostable waste emits methane, a greenhouse gas far more potent than CO₂ over the short term. That same methane, captured, is renewable energy. The question was whether a practical digester design could make capture more efficient."
+    "objectID": "index.html#at-a-glance",
+    "href": "index.html#at-a-glance",
+    "title": "Jordan Y. Aljbour",
+    "section": "At a glance",
+    "text": "At a glance\n\n\n40%+\nRuntime & memory cut on distributed HPC pipelines running 10k+ Monte Carlo samples per scenario\n\n\n69\nEnergy technologies scored in EPRI’s Technology Radar methodology\n\n\n10+\nPeer & industry publications across energy and climate science\n\n\n6\nProfessional certifications earned or in progress (AEE, IBM, Google, WRI)"
   },
   {
-    "objectID": "methane-thesis.html#what-i-built",
-    "href": "methane-thesis.html#what-i-built",
-    "title": "Honors Thesis: Methane Capture from Compostables",
-    "section": "What I built",
-    "text": "What I built\nFor my award-winning Honors thesis, I designed and built a novel anaerobic biogas digester featuring a dual-motor agitation system and multi-stage gas scrubbing.\n\nDemonstrated approximately 88–94% CH₄ purity in captured biogas.\nAchieved a roughly 35% biogas-yield improvement attributable to agitation.\nEstimated statewide potential of ~30.3 million MWh of renewable natural gas and ~81,766 tons of avoided CH₄ emissions.\n\nThis earned the PSU Honors College Thesis Achievement Award."
-  },
-  {
-    "objectID": "methane-thesis.html#why-it-matters",
-    "href": "methane-thesis.html#why-it-matters",
-    "title": "Honors Thesis: Methane Capture from Compostables",
-    "section": "Why it matters",
-    "text": "Why it matters\nIt’s a concrete example of the stewardship principle that drives my work: turning a pollution problem into an energy solution, backed by measured results rather than good intentions."
+    "objectID": "index.html#what-i-do",
+    "href": "index.html#what-i-do",
+    "title": "Jordan Y. Aljbour",
+    "section": "What I do",
+    "text": "What I do\nI build the computational machinery behind environmental and energy decisions, because I believe the people making those decisions deserve the clearest possible picture of what’s at stake. That conviction shapes how I work. I write end-to-end, reproducible scientific software: distributed data pipelines, statistical and risk models, and analysis-ready geospatial tooling, engineered to scale from a laptop to HPC and cloud clusters without ever cutting corners on rigor or reproducibility.\nThe questions I take on are the ones where the science has real consequences for the planet. How much will a warming climate cost our aging energy infrastructure? What will AI and data centers truly demand from the grid? How are global methane and ethane emissions actually trending, and where can we intervene? I turn messy physical data into honest tools that answer those questions with quantified uncertainty, because good stewardship starts with telling the truth about the numbers.\nMost recently, as a Senior Python Developer in parallel computing at ICF, I converted experimental climate workflows into modular, tested, containerized Python packages. I engineered Dask pipelines for out-of-core processing and standardized ARCO-compliant geospatial formats (Zarr, NetCDF) on AWS S3, cutting runtime and memory by 40%+ in the process."
   },
   {
     "objectID": "projects/climate-risk-engineering.html",
