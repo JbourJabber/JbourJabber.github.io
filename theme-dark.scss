@@ -241,3 +241,9 @@ a:hover {
   color: #0e1113 !important;
   transform: translateY(-1px);
 }
+
+// ---- About profile image crop ----
+img.about-image {
+  object-fit: cover !important;
+  object-position: 50% 20% !important;
+}

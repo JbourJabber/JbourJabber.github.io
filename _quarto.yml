@@ -7,6 +7,18 @@ project:
 
 website:
   title: ""
+  favicon: favicon.svg
+  site-url: https://jyaljbour.com
+  description: "Computational and data scientist working across climate science, energy systems, and high-performance computing."
+  open-graph:
+    title: "Jordan Y. Aljbour"
+    description: "Computational and data scientist working across climate science, energy systems, and high-performance computing."
+    image: images/profile.jpg
+  twitter-card:
+    title: "Jordan Y. Aljbour"
+    description: "Computational and data scientist working across climate science, energy systems, and high-performance computing."
+    image: images/profile.jpg
+    card-style: summary_large_image
   navbar:
     left:
       - href: index.qmd

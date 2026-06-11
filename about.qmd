@@ -2,6 +2,7 @@
 title: "Jordan Y. Aljbour"
 about:
   template: trestles
+  image: images/profile.jpg
   image-shape: round
   links:
     - icon: github
